@@ -4,7 +4,12 @@ import Hero from './components/Hero';
 import LogoTicker from './components/LogoTicker';
 import Catalog from './components/Catalog';
 import Card from './components/Card';
-import Carta from './components/Carta';
+
+import Footer from './components/Footer';
+import Mep from './components/Map';
+
+
+
 
 
 function App() {
@@ -68,8 +73,9 @@ function App() {
 
 </div>
   </div>
-  
-<Carta/>
+<Mep/>
+
+<Footer/>
   </>
   );
   
