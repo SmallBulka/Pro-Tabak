@@ -1,5 +1,4 @@
 
-
 function Card(props) {
   return (
     <section >
@@ -28,6 +27,7 @@ function Card(props) {
 </div>
 
 </section>
+
   )
 }
 

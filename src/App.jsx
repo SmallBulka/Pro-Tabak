@@ -6,7 +6,7 @@ import Catalog from './components/Catalog';
 import Card from './components/Card';
 
 import Footer from './components/Footer';
-import Mep from './components/Map';
+//  import Map from './components/Map';
 
 
 
@@ -18,7 +18,9 @@ function App() {
 
 
   return (
+    
   <>
+  
   <Header/>
   <Hero/>
   <LogoTicker/>
@@ -27,7 +29,7 @@ function App() {
 
   <div className="container mx-auto px-5 py-2  lg:pt-12">
   <div className="-m-1 flex flex-wrap md:-m-2">
-    
+
   <div className="flex  mr-8 flex-wrap ">
       <div className="w-full p-[20px] md:p-p-10">
       <Card title="Сигареты" imageImg="../img/cigaronne.webp"/>
@@ -73,8 +75,8 @@ function App() {
 
 </div>
   </div>
-<Mep/>
-
+  {/* <Map/>  */}
+      
 <Footer/>
   </>
   );

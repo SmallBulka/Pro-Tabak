@@ -28,8 +28,9 @@ body,
         @apply h-8 w-auto;
     }
     
+    
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 4px;
 }
 ::-webkit-scrollbar:horizontal {
@@ -37,4 +38,4 @@ body,
 }
 ::-webkit-scrollbar-thumb {
     @apply bg-[#29A19C] rounded-xl;
-} */
+}
