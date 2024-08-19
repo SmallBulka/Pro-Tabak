@@ -6,7 +6,7 @@ import Catalog from './components/Catalog';
 import Card from './components/Card';
 
 import Footer from './components/Footer';
-//  import Map from './components/Map';
+import Maps from './components/Maps';
 
 
 
@@ -75,7 +75,7 @@ function App() {
 
 </div>
   </div>
-  {/* <Map/>  */}
+  <Maps/>
       
 <Footer/>
   </>
