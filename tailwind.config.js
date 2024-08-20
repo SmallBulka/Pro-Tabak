@@ -14,8 +14,10 @@ export default {
     },
     extend: {
       fontFamily:{
-        poppins: ["Poppins", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"]
+        rubik: ["Rubik Mono One", "monospace"],
+        rboto: ["Roboto", "sans-serif"],
+        montserra: ["Montserrat", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"]
       },
       colors: {
         lighgra: '#D4C17F',

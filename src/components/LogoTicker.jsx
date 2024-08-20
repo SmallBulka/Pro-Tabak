@@ -2,7 +2,7 @@
 import Winston from "../assets/Winston";
 import Donskoy from "../assets/Donskoy";
 import Kent from "../assets/Kent";
-import Camel from "../assets/Reynolds";
+// import Camel from "../assets/Reynolds";
 import Don from "../assets/Don";
 import Can from "../assets/Can";
 import Сhesterfield from "../assets/Сhesterfield";
@@ -20,7 +20,7 @@ function LogoTicker() {
                 translateX: '-50%',
             }}
             transition={{
-                duration: 20,
+                duration: 70,
                 repeat: Infinity,
                 ease: "linear",
                 repeatType: "loop",
@@ -30,7 +30,7 @@ function LogoTicker() {
                 <Winston />
                 <Donskoy/>
                 <Kent/>
-                <Camel/>
+                
                 <Don/>
                 <Can />
                 <Сhesterfield />
@@ -38,7 +38,7 @@ function LogoTicker() {
                 <Winston />
                 <Donskoy/>
                 <Kent/>
-                <Camel/>
+                
                 <Don/>
                 <Can />
                 <Сhesterfield />
