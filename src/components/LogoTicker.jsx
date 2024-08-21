@@ -2,9 +2,10 @@
 import Winston from "../assets/Winston";
 import Donskoy from "../assets/Donskoy";
 import Kent from "../assets/Kent";
-// import Camel from "../assets/Reynolds";
+import Pepe from "../assets/Pepe";
 import Don from "../assets/Don";
 import Can from "../assets/Can";
+import Chapman from "../assets/Chapman";
 import Сhesterfield from "../assets/Сhesterfield";
 import {motion} from "framer-motion"
 
@@ -20,28 +21,32 @@ function LogoTicker() {
                 translateX: '-50%',
             }}
             transition={{
-                duration: 70,
+                duration: 50,
                 repeat: Infinity,
                 ease: "linear",
                 repeatType: "loop",
             }}
             >
                
-                <Winston />
-                <Donskoy/>
+               <Winston />
+               <Chapman/>
+                <Pepe/>
                 <Kent/>
-                
+                <Donskoy/>
                 <Don/>
                 <Can />
                 <Сhesterfield />
+                
 
                 <Winston />
-                <Donskoy/>
+               <Chapman/>
+                <Pepe/>
                 <Kent/>
-                
+                <Donskoy/>
                 <Don/>
                 <Can />
                 <Сhesterfield />
+                
             </motion.div>
             </div>
         </div>
