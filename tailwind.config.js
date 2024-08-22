@@ -17,6 +17,7 @@ export default {
         rubik: ["Rubik Mono One", "monospace"],
         rboto: ["Roboto", "sans-serif"],
         montserra: ["Montserrat", "sans-serif"],
+        almontserra: ["Montserrat Alternates", "sans-serif"],
         raleway: ["Raleway", "sans-serif"]
       },
       colors: {

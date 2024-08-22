@@ -19,7 +19,7 @@ function Header () {
       
         <div className="container mx-auto flex justify-between h-full items-center ">
         <div className=' text-4xl  text-slate-100 font-rubik '>Pro_Табак</div>
-        <nav className="">
+        <nav className="xl:hidden">
         
           <ul className="flex items-center gap-[30px] ">
             <li>

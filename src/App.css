@@ -28,17 +28,23 @@ body,
         @apply h-8 w-auto;
     }
     .h2{
-        @apply text-4xl font-bold text-slate-100;
+        @apply text-3xl font-almontserra text-slate-100;
+    }
+    .h3{
+        @apply text-xl font-almontserra text-slate-100;
+    }
+    .br{
+        @apply my-5 p-0 h-2 w-[170px] border-none bg-gradient-to-br from-[#ffce00] to-[#2D343C] rounded-[5px] ;
     }
     
     
 }
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 8px;
 }
 ::-webkit-scrollbar:horizontal {
-    height: 10px;
+    height: 20px;
 }
 ::-webkit-scrollbar-thumb {
-    @apply bg-[#29A19C] rounded-xl;
+    @apply bg-[#ffce00] rounded-xl;
 }

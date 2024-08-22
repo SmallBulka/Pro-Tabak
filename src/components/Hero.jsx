@@ -2,6 +2,7 @@ import ArrowIcon from "../assets/ArrowIcon"
 
 
 function Hero() {
+  
   return (
     // pt-8 pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)]
         <section className="hero h-[840px] xl:h-[760px] bg-auto bg-hero  lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20">
