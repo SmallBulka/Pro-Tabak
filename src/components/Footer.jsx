@@ -9,7 +9,7 @@ function Footer() {
           text-center xl:text-left "
           >
           <a className="flex justify-center xl:justify-start mb-8" href="">
-          <div className=' text-4xl  text-slate-100 font-rubik '>Pro_Tabak</div></a>
+          <div className=' text-4xl  text-slate-100 font-rubik '>Pro_Табак</div></a>
           <p className="mb-8 text-xl text-[#fffa]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque</p>
           <ul className='text-pretty flex gap-[54px] justify-center xl:justify-start'>
             <li className='flex gap-3 items-center'>
