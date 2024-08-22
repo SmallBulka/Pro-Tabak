@@ -9,13 +9,13 @@ import Handshake from './assets/Handshake';
 import Warranty from './assets/Warranty';
 import Footer from './components/Footer';
 import Maps from './components/Maps';
-
+import Form from './components/Form';
 
 
 
 function App() {
 
-
+  
 
 
   return (
@@ -28,12 +28,14 @@ function App() {
   
   
 
-  <div className="container mx-auto px-5 py-2  lg:pt-12 ">
-  {/* <h2 className='h2'>Каталог</h2> */}
+  <div className="container mx-auto px-5 py-2   md:justify-center">
+  <hr className='br m-auto '></hr>
+  <h2 className='h2 p-5  flex justify-center'>Каталог</h2>
+  
   <div className="m-1 flex flex-wrap md:-m-2 ">
 
   <div className="flex  mr-8 flex-wrap">
-      <div className="w-full p-[20px] md:p-p-10">
+      <div className="w-full p-[20px] md:p-p-10 ">
       <Card title="Сигареты" imageImg="../img/cigaronne.webp"/>
       </div>
     </div>
@@ -77,14 +79,19 @@ function App() {
 
 </div>
   </div>
-<div className='steps mt-[80px] xl:mt-[100px] relative z-20'>
+<div className='steps mt-[80px] xl:mt-[60px] relative z-20'>
+  
   <div className='container mx-auto'>
-    <div className='grid grid-cols-1 gap-12 xl:grid-cols-3'>
-      <div className='steps__step text-center'>
+  <hr className='br m-auto'></hr>
+  <h2 className='h2 p-10  flex justify-center'>Преимущества компании</h2>
+  
+    <div className='grid grid-cols-1 gap-12 xl:grid-cols-3 text-[#fffa] p-5 pb-20'>
+      
+      <div className='steps__step text-center '>
         <div className='mb-4 flex justify-center'>
         <Shopping/>
         </div>
-        <h3 className='h3 mb-5'>Широкий ассортимент</h3>
+        <h3 className='h3 mb-5 '>Широкий ассортимент</h3>
         <p className='mb-5 max-w-md mx-auto'>
         Мы предлагаем разнообразие товаров, чтобы удовлетворить разные потребности клиентов. </p>
       </div>
@@ -115,9 +122,8 @@ function App() {
 
 
 
-
   <Maps/>
-      
+  <Form/>
 <Footer/>
   </>
   );
