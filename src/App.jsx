@@ -35,7 +35,7 @@ function App() {
   <div className="m-1 flex flex-wrap md:-m-2 ">
 
   <div className="flex  mr-8 flex-wrap">
-      <div className="w-full p-[20px] md:p-p-10">
+      <div className="w-full p-[20px] md:p-p-10 ">
       <Card title="Сигареты" imageImg="../img/cigaronne.webp"/>
       </div>
     </div>

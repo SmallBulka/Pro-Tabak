@@ -1,4 +1,4 @@
-
+import Menu from '../assets/Menu'
 
 // flex w-full h-0 p-0  overflow-hidden border-t top-[90px] lg:left-0 ring-0 flex-col gap-4 
 //           lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300
@@ -19,27 +19,30 @@ function Header () {
       
         <div className="container mx-auto flex justify-between h-full items-center ">
         <div className=' text-4xl  text-slate-100 font-rubik '>Pro_Табак</div>
-        <nav className="xl:hidden">
         
-          <ul className="flex items-center gap-[30px] ">
+        <nav>
+          <div className="cursor-pointer lg:hidden">
+          <i><Menu/></i>
+          </div>
+          {/* flex items-center gap-[30px] overflow-hidden */}
+        
+          <ul className="fixed w-full h-0 p-0  border-t top-[90px]
+          left-0 ring-0 flex flex-col items-center gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0
+          lg:border-none lg:full transition-all duration-300">
             <li>
               <a href="#" className="hoverEffects ">Каталог</a>
           </li>
             <li>
               <a href="#" className="hoverEffects">О компании</a>
           </li>
-            {/* <li>
-              <a href="#" className="hoverEffects">Новости</a>
-          </li> */}
             <li>
               <a href="#" className=" hoverEffects">Контакты</a>
           </li>
           </ul>
-          
         </nav>
+        </div>
 
-
-        <button id="burger"  className="group  relative sm:block h-5 w-[30px] curcor-pointer lg:hidden">
+        {/* <button id="burger"  className="group  relative sm:block h-5 w-[30px] curcor-pointer lg:hidden">
           <span 
             className="absolute top-0 left-0 h-[1px] w-full bg-white 
             transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"></span>
@@ -66,8 +69,8 @@ function Header () {
               <a href='#' className='text-xl text-white'>Контакты</a>
             </li>
           </ul>
-        </nav>
-        </div>
+        </nav> */}
+        
         
         
       </header>
