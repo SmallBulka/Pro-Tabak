@@ -10,7 +10,7 @@ import Warranty from './assets/Warranty';
 import Footer from './components/Footer';
 import Maps from './components/Maps';
 import Form from './components/Form';
-// import Popup from './components/Popup';
+import Popup from './components/Popup';
 
 
 
@@ -27,7 +27,7 @@ function App() {
   <Hero/>
   <LogoTicker/>
   
-  {/* <Popup/> */}
+  <Popup/>
 
   <div className="container mx-auto px-5 py-2   md:justify-center">
   <hr className='br m-auto '></hr>
