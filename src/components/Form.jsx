@@ -59,8 +59,8 @@ function Form() {
         </div>
         <hr></hr>
         <div className="md:flex justify-center gap-[150px] pt-7 text-white h3">
-          <p>+7 (999) 999 99 99</p>
-          <p>protabak@mail.ru</p>
+          <p>+7(904)4903470</p>
+          <p>tabakbazar@mail.ru</p>
         </div>
       </div>
     </div>

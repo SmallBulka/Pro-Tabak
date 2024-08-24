@@ -24,7 +24,7 @@ function Footer() {
                 <a href="">
                   <Whatsapp />
                 </a>
-                <p className="text-[#fffa]">+7 (999) 999 99 99</p>
+                <p className="text-[#fffa]">+7(904)4903470</p>
               </li>
             </ul>
           </div>
