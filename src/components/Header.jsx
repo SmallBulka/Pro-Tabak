@@ -1,48 +1,56 @@
-import Menu from '../assets/Menu'
+import Menu from "../assets/Menu";
 
-// flex w-full h-0 p-0  overflow-hidden border-t top-[90px] lg:left-0 ring-0 flex-col gap-4 
+// flex w-full h-0 p-0  overflow-hidden border-t top-[90px] lg:left-0 ring-0 flex-col gap-4
 //           lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300
 
-function Header () {
-
+// eslint-disable-next-line react/prop-types
+function Header({ scrollToCatalog, scrollContacts, scrollToDescription }) {
   return (
     // <main className='max-w-[1920px] mx-auto bg-black overflow-hidden '>
-    
-    
 
-      <header className="sticky top-0 h-[80px] z-30 backdrop-blur-sm  ">
-        {/* <div className="flex justify-center items-center py-3">
+    <header className="sticky top-0 h-[80px] z-30 backdrop-blur-sm  ">
+      {/* <div className="flex justify-center items-center py-3">
           <div className="inline-flex gap-1 items-center">
             <p>vdrfv</p>
           </div>
         </div> */}
-      
-        <div className="container mx-auto flex justify-between h-full items-center ">
-        <div className=' text-4xl  text-slate-100 font-rubik '>Pro_Табак</div>
-        
+
+      <div className="container mx-auto flex justify-between h-full items-center ">
+        <div className=" text-4xl  text-slate-100 font-rubik ">Pro_Табак</div>
+
         <nav>
           <div className="cursor-pointer lg:hidden">
-          <i><Menu/></i>
+            <i>
+              <Menu />
+            </i>
           </div>
           {/* flex items-center gap-[30px] overflow-hidden */}
-        
-          <ul className="fixed w-full h-0 p-0  border-t top-[90px]
+
+          <ul
+            className="fixed w-full h-0 p-0  border-t top-[90px]
           left-0 ring-0 flex flex-col items-center gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0
-          lg:border-none lg:full transition-all duration-300">
+          lg:border-none lg:full transition-all duration-300"
+          >
             <li>
-              <a href="#" className="hoverEffects ">Каталог</a>
-          </li>
+              <p className="hoverEffects " onClick={() => scrollToCatalog()}>
+                Каталог
+              </p>
+            </li>
             <li>
-              <a href="#" className="hoverEffects">О компании</a>
-          </li>
+              <p className="hoverEffects" onClick={() => scrollToDescription()}>
+                О компании
+              </p>
+            </li>
             <li>
-              <a href="#" className=" hoverEffects">Контакты</a>
-          </li>
+              <p className=" hoverEffects" onClick={() => scrollContacts()}>
+                Контакты
+              </p>
+            </li>
           </ul>
         </nav>
-        </div>
+      </div>
 
-        {/* <button id="burger"  className="group  relative sm:block h-5 w-[30px] curcor-pointer lg:hidden">
+      {/* <button id="burger"  className="group  relative sm:block h-5 w-[30px] curcor-pointer lg:hidden">
           <span 
             className="absolute top-0 left-0 h-[1px] w-full bg-white 
             transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"></span>
@@ -70,16 +78,8 @@ function Header () {
             </li>
           </ul>
         </nav> */}
-        
-        
-        
-      </header>
-      
-    
-     
-  )
-  
+    </header>
+  );
 }
 
-
-export default Header
+export default Header;

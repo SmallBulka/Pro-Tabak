@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-google-map-wrapper": "^1.0.5",
     "react-helmet": "^6.1.0",
+    "react-scroll-to-element": "^0.2.0",
     "tailwind-merge": "^2.4.0",
     "ymaps": "^0.2.1"
   },
