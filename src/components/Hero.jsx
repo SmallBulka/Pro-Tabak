@@ -10,21 +10,21 @@ function Hero({ scrollToCatalog, scrollToMiniMap }) {
           className="text-white w-[567px] flex flex-col items-center text-center
                 xl:text-left lg:items-start"
         >
-          <h1 className="text-[64px] fg:text-[84px] leading-none mb-8">
+          <h1 className="text-[40px] md:text-[64px]  leading-none mb-8">
             Изысканность и качество в каждой затяжке
           </h1>
           <p className="mb-8">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Temporibus, enim.
           </p>
-          <div className="flex gap-1 items-centermt ">
+          <div className="md:flex gap-1 items-centermt ">
             <button
               className="btn btn-primary mx-auto xl:mx-0"
               onClick={() => scrollToCatalog()}
             >
               Перейти в каталог
             </button>
-            <button className="btn btn-text gap-2 ">
+            <button className="btn btn-text gap-2">
               <span onClick={() => scrollToMiniMap()}>Где купить</span>
               <ArrowIcon />
             </button>

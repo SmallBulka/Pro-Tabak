@@ -4,7 +4,7 @@
 function Popup({ clickConfirmAge }) {
   return (
     <div className="flex m-auto justify-center absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-      <div className="relative w-[320px] lg:w-[710px] h-[480px] bg-[#191919] rounded-[20px] p-10">
+      <div className="relative  lg:w-[710px] h-[710px] lg:h-[480px] bg-[#191919] rounded-[20px] p-10">
         <div>
           <h2 className="text-[#ffce00] flex justify-center font-semibold">
             ВНИМАНИЕ!
@@ -41,7 +41,7 @@ function Popup({ clickConfirmAge }) {
               Нет,мне нет 18 лет
             </button>
             <button
-              className="h-[60px] px-[30px] bg-white text-black rounded-[18px]"
+              className="lg:h-[60px] px-[30px] bg-white text-black rounded-[18px]"
               onClick={() => {
                 clickConfirmAge();
               }}

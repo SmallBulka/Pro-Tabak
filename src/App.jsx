@@ -49,14 +49,14 @@ function App() {
           <LogoTicker />
           <div
             ref={logoTicker}
-            className="container mx-auto px-5 py-2   md:justify-center"
+            className="container mx-auto lg:px-5 py-2   md:justify-center"
           >
             <hr className="br m-auto "></hr>
             <h2 className="h2 p-5  flex justify-center">Каталог</h2>
 
             <div className="m-1 flex flex-wrap md:-m-2 ">
               <div className="flex  mr-8 flex-wrap">
-                <div className="w-full p-[20px] md:p-p-10 ">
+                <div className="w-full p-[20px] lg:p-p-10 ">
                   <Card
                     title="Сигареты"
                     imageImg="../img/cigaronne.webp"
