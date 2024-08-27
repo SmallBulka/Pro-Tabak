@@ -19,7 +19,7 @@ function Form() {
                 Имя
               </label>
               <input
-                className="rounded-[20px] bg-[#2D343C] w-[300px] h-[40px]"
+                className="rounded-[20px] bg-[#2D343C] md:w-[300px] h-[40px]"
                 type="text"
                 id="name"
                 name="name"
@@ -31,7 +31,7 @@ function Form() {
                 Email
               </label>
               <input
-                className="rounded-[20px] bg-[#2D343C] w-[300px] h-[40px]"
+                className="rounded-[20px] bg-[#2D343C] md:w-[300px] h-[40px]"
                 type="email"
                 id="email"
                 name="email"
@@ -43,7 +43,7 @@ function Form() {
                 Сообщение
               </label>
               <textarea
-                className="rounded-[20px] bg-[#2D343C] w-[400px] h-[80px]"
+                className="rounded-[20px] bg-[#2D343C] sm:w-[400px] h-[80px]"
                 id="message"
                 name="message"
               />
