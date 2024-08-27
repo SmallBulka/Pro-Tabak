@@ -24,9 +24,6 @@
     "tailwind-merge": "^2.4.0",
     "ymaps": "^0.2.1"
   },
-  "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.6.1"
-  },
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
