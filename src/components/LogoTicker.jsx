@@ -1,4 +1,4 @@
-'use client'
+
 import Winston from "../assets/Winston";
 import Donskoy from "../assets/Donskoy";
 import Kent from "../assets/Kent";

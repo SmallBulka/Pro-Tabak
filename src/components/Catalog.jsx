@@ -1,7 +1,7 @@
-import React from "react";
+
 
 // import ArrowIcon from "../assets/ArrowIcon"
-React;
+
 function Catalog(props) {
   return (
     <section>
