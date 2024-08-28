@@ -14,7 +14,7 @@ function Form() {
 
         <div>
           <form className="lg:flex md:flex-wrap md:justify-center pt-10 items-center ">
-            <div className="mb-6 mr-[100px]">
+            <div className="mb-6">
               <label className="text-white p-4" htmlFor="name">
                 Имя
               </label>
@@ -38,19 +38,19 @@ function Form() {
               />
             </div>
 
-            <div className="mb-6 pr-11 md:flex items-center">
+            <div className="mb-6 md:pr-11 md:flex md:items-center ">
               <label className="text-white p-4" htmlFor="message">
                 Сообщение
               </label>
               <textarea
-                className="rounded-[20px] bg-[#2D343C] sm:w-[400px] h-[80px]"
+                className="rounded-[20px] bg-[#2D343C] md:w-[400px] h-[50px] lg:h-[80px]"
                 id="message"
                 name="message"
               />
             </div>
 
             <button
-              className="btn-primary mx-auto xl:mx-0 h-[50px] px-[40px] rounded-[18px]"
+              className="btn-primary mx-auto xl:mx-0 h-[50px] px-[40px] rounded-[18px] mb-5"
               type="submit"
             >
               Отправить сообщение
@@ -59,8 +59,10 @@ function Form() {
         </div>
         <hr></hr>
         <div className="md:flex justify-center gap-[150px] pt-7 text-white h3">
-          <a href="tel:+79044903470">+7 (904) 490 34 70</a>
+          <a className="" href="tel:+79044903470">+7 (904) 490 34 70</a>
+          <div>
           <a href="mailto:tabakbazar@mail.ru">tabakbazar@mail.ru</a>
+          </div>
         </div>
       </div>
     </div>

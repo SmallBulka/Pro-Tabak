@@ -6,7 +6,7 @@ function Catalog(props) {
   return (
     <section>
       <div
-        className="relative md:w-[320px] h-[480px] bg-[#191919] rounded-[20px] overflow-hidden
+        className="relative w-[280px] md:w-[320px] h-[480px] bg-[#191919] rounded-[20px] overflow-hidden
     before:content-[''] before:absolute before:top-[-50%] before:w-full before:h-full before:bg-[#fffa] 
    before:transform before:skew-y-[345deg] before:transition-[0.5s]
    card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg]

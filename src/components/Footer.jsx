@@ -56,7 +56,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex items-center m-auto">
+          <div className="flex items-center m-auto mb-5">
             <div className="flex lg:h-[90px] lg:w-[310px]  bg-white border-8 border-black">
               <p className="text-balance text-center font-bold p-1">
                 МИНЗДРАВ ПРЕДУПРЕЖДАЕТ: КУРЕНИЕ ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ!

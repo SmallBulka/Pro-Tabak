@@ -49,13 +49,13 @@ function App() {
           <LogoTicker />
           <div
             ref={logoTicker}
-            className="container mx-auto lg:px-5 py-2   md:justify-center"
+            className="container m-auto lg:px-5 py-2   "
           >
             <hr className="br m-auto "></hr>
             <h2 className="h2 p-5  flex justify-center">Каталог</h2>
 
-            <div className="m-1 flex flex-wrap md:-m-2 ">
-              <div className="flex  mr-8 flex-wrap">
+            <div className=" flex flex-wrap md:-m-2 justify-evenly md:justify-center">
+              <div className="flex  lg:mr-8 flex-wrap">
                 <div className="w-full p-[20px] lg:p-p-10 ">
                   <Card
                     title="Сигареты"
@@ -108,7 +108,7 @@ function App() {
       </div>
     </div> */}
               <div className="flex xl:w-1/3 flex-wrap">
-                <div className="w-full p-[20px] md:p-p-10">
+                <div className="w-full lg:pl-0 p-[20px] md:p-p-10">
                   <Catalog
                     title="Сувенирная продукция"
                     imageImg="../img/4.png"
@@ -116,8 +116,8 @@ function App() {
                   />
                 </div>
               </div>
-              <div className="flex xl:w-1/2 flex-wrap">
-                <div className="w-full p-[20px] md:p-5">
+              <div className="flex  flex-wrap ">
+                <div className="w-full p-[20px] lg:pl-0  ">
                   <Card
                     title="Папиросы"
                     imageImg="../img/scale_1200.png"
@@ -133,7 +133,7 @@ function App() {
           >
             <div className="container mx-auto">
               <hr className="br m-auto"></hr>
-              <h2 className="h2 p-10  flex justify-center">
+              <h2 className="h2 p-10  flex justify-center text-center">
                 Преимущества компании
               </h2>
 
