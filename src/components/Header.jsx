@@ -1,15 +1,20 @@
 import Menu from "../assets/Menu";
-import { useRef, useState } from "react";
+import { useState, useEffect } from "react";
 // flex w-full h-0 p-0  overflow-hidden border-t top-[90px] lg:left-0 ring-0 flex-col gap-4
 //           lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300
 
 // eslint-disable-next-line react/prop-types
 function Header({ scrollToCatalog, scrollContacts, scrollToDescription }) {
   const [menuVisible, setMenuVisible] = useState(false);
-  const menuItems = useRef(null);
+
   const toggleMenuVisible = () => {
     setMenuVisible((value) => !value);
   };
+  useEffect(() => {
+    if (window.innerWidth > 940) {
+      console.log(setMenuVisible(true));
+    }
+  }, []);
   return (
     // <main className='max-w-[1920px] mx-auto bg-black overflow-hidden '>
 
@@ -36,8 +41,7 @@ function Header({ scrollToCatalog, scrollContacts, scrollToDescription }) {
           {/* flex items-center gap-[30px] overflow-hidden */}
 
           <ul
-            ref={menuItems}
-            className={`z-4 fixed w-full h-0 p-0 border-t top-[90px] left-0 ring-0 flex flex-col items-center gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:full transition-all duration-300  ${
+            className={`z-4 fixed w-full h-0 p-0 border-t top-[90px] left-0 ring-0 flex flex-col items-center gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:full lg:visible lg:translate-x-3  transition-all duration-300  ${
               menuVisible ? "menuVisible " : " menuInvisible"
             }`}
           >
