@@ -15,8 +15,7 @@ function Footer() {
               </div>
             </a>
             <p className="mb-8 text-xl text-[#fffa]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque
+              Дима придумай сюда текст
             </p>
             <ul className="text-pretty flex gap-[54px] justify-center xl:justify-start">
               <li className="flex gap-3 items-center">
@@ -44,15 +43,6 @@ function Footer() {
                 className=" text-[#ffce00]"
               >
                 ​Ул. Герцена, 95
-              </a>
-              <a href="#" className=" text-[#ffce00]">
-                Задать вопрос
-              </a>
-              <a href="#" className="text-[#ffce00]">
-                Заказать звонок
-              </a>
-              <a href="#" className="text-[#ffce00]">
-                Запросить оптовый прайс
               </a>
             </div>
           </div>
