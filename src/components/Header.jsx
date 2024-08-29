@@ -1,14 +1,19 @@
 import Menu from "../assets/Menu";
-
+import { useRef, useState } from "react";
 // flex w-full h-0 p-0  overflow-hidden border-t top-[90px] lg:left-0 ring-0 flex-col gap-4
 //           lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300
 
 // eslint-disable-next-line react/prop-types
 function Header({ scrollToCatalog, scrollContacts, scrollToDescription }) {
+  const [menuVisible, setMenuVisible] = useState(false);
+  const menuItems = useRef(null);
+  const toggleMenuVisible = () => {
+    setMenuVisible((value) => !value);
+  };
   return (
     // <main className='max-w-[1920px] mx-auto bg-black overflow-hidden '>
 
-    <header className="sticky top-0 h-[80px] z-30 backdrop-blur-sm  ">
+    <header className="sticky top-0 h-[80px] z-30 backdrop-blur-sm z-5 ">
       {/* <div className="flex justify-center items-center py-3">
           <div className="inline-flex gap-1 items-center">
             <p>vdrfv</p>
@@ -20,16 +25,21 @@ function Header({ scrollToCatalog, scrollContacts, scrollToDescription }) {
 
         <nav>
           <div className="cursor-pointer lg:hidden">
-            <i>
+            <i
+              onClick={() => {
+                toggleMenuVisible();
+              }}
+            >
               <Menu />
             </i>
           </div>
           {/* flex items-center gap-[30px] overflow-hidden */}
 
           <ul
-            className="fixed w-full h-0 p-0  border-t top-[90px]
-          left-0 ring-0 flex flex-col items-center gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0
-          lg:border-none lg:full transition-all duration-300"
+            ref={menuItems}
+            className={`z-4 fixed w-full h-0 p-0 border-t top-[90px] left-0 ring-0 flex flex-col items-center gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:full transition-all duration-300  ${
+              menuVisible ? "menuVisible " : " menuInvisible"
+            }`}
           >
             <li>
               <p className="hoverEffects " onClick={() => scrollToCatalog()}>

@@ -47,10 +47,7 @@ function App() {
             scrollToMiniMap={scrollToMiniMap}
           />
           <LogoTicker />
-          <div
-            ref={logoTicker}
-            className="container m-auto lg:px-5 py-2   "
-          >
+          <div ref={logoTicker} className="container m-auto lg:px-5 py-2   ">
             <hr className="br m-auto "></hr>
             <h2 className="h2 p-5  flex justify-center">Каталог</h2>
 

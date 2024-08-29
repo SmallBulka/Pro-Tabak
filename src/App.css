@@ -1,50 +1,59 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight */
 html,
 body,
 #root {
-    @apply  box-border font-montserra bg-[#2D343C]
-    
+  @apply box-border font-montserra bg-[#2D343C];
 }
 @layer components {
-    .btn {
-        @apply h-[75px] px-[30px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2
-    }
-    .btn-primary {
-        @apply bg-white text-black;
-    }
-    .btn-text {
-        @apply text-white bg-transparent;
-    }
-    .hoverEffects {
-        @apply relative  font-medium text-[15px] leading-[22px] text-white
+  .btn {
+    @apply h-[75px] px-[30px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2;
+  }
+  .btn-primary {
+    @apply bg-white text-black;
+  }
+  .btn-text {
+    @apply text-white bg-transparent;
+  }
+  .hoverEffects {
+    @apply relative  font-medium text-[15px] leading-[22px] text-white
         after:bg-white after:absolute after:left-0 after:h-[1px] after:-bottom-1 after:w-full after:scale-0 
-        after:transition-transform hover:after:scale-100
-    }
-    .logo-ticker{
-        @apply h-8 w-auto;
-    }
-    .h2{
-        @apply text-3xl font-almontserra text-slate-100;
-    }
-    .h3{
-        @apply text-xl font-almontserra text-slate-100;
-    }
-    .br{
-        @apply my-5 p-0 h-2 w-[170px] border-none bg-gradient-to-br from-[#ffce00] to-[#2D343C] rounded-[5px] ;
-    }
-    
-    
+        after:transition-transform hover:after:scale-100;
+  }
+  .logo-ticker {
+    @apply h-8 w-auto;
+  }
+  .h2 {
+    @apply text-3xl font-almontserra text-slate-100;
+  }
+  .h3 {
+    @apply text-xl font-almontserra text-slate-100;
+  }
+  .br {
+    @apply my-5 p-0 h-2 w-[170px] border-none bg-gradient-to-br from-[#ffce00] to-[#2D343C] rounded-[5px];
+  }
 }
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 ::-webkit-scrollbar:horizontal {
-    height: 20px;
+  height: 20px;
 }
 ::-webkit-scrollbar-thumb {
-    @apply bg-[#ffce00] rounded-xl;
+  @apply bg-[#ffce00] rounded-xl;
+}
+
+.menuVisible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+.menuInvisible {
+  transform: translateY(-10px);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, visibility 0.25s ease-in-out;
 }
