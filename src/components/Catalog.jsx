@@ -28,7 +28,7 @@ function Catalog(props) {
           className="relative p-5 flex justify-center items-center flex-col z-20
   "
         >
-          <h3 className="text-white text-xl font-medium tracking-wide text-center">
+          <h3 className="text-white text-lg lg:text-xl font-medium tracking-wide text-center">
             {props.title}
           </h3>
 

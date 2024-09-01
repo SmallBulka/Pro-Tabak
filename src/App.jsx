@@ -13,6 +13,7 @@ import Form from "./components/Form";
 import Popup from "./components/Popup";
 import React from "react";
 
+
 function App() {
   const miniMap = React.useRef(null);
   const logoTicker = React.useRef(null);
@@ -47,6 +48,9 @@ function App() {
             scrollToMiniMap={scrollToMiniMap}
           />
           <LogoTicker />
+
+
+
           <div ref={logoTicker} className="container m-auto lg:px-5 py-2   ">
             <hr className="br m-auto "></hr>
             <h2 className="h2 p-5  flex justify-center">Каталог</h2>
@@ -64,7 +68,7 @@ function App() {
 
               <div className="flex xl:w-1/3 flex-wrap ">
                 <div className="w-full p-[20px] md:p-p-10 ">
-                  <Catalog
+                  <Catalog 
                     title="Электронные сигареты"
                     imageImg="img/34194.970.png"
                     scrollToMiniMap={scrollToMiniMap}

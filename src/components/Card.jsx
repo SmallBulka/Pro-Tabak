@@ -29,7 +29,7 @@ function Card(props) {
           </h3>
 
           <div className="relative container">
-            <span className="absolute  text-[7em] font-extrabold italic text-white/10">
+            <span className="absolute  text-[7em] font-extrabold italic text-white/10 ">
               Pro-Tabak
             </span>
           </div>
