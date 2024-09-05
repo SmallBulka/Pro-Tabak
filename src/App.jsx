@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import LogoTicker from "./components/LogoTicker";
 import Catalog from "./components/Catalog";
-import Card from "./components/Card";
+// import Card from "./components/Card";
 import Shopping from "./assets/Shopping";
 import Handshake from "./assets/Handshake";
 import Warranty from "./assets/Warranty";
@@ -12,7 +12,6 @@ import Maps from "./components/Maps";
 import Form from "./components/Form";
 import Popup from "./components/Popup";
 import React from "react";
-
 
 function App() {
   const miniMap = React.useRef(null);
@@ -49,38 +48,36 @@ function App() {
           />
           <LogoTicker />
 
-
-
           <div ref={logoTicker} className="container m-auto lg:px-5 py-2   ">
             <hr className="br m-auto "></hr>
             <h2 className="h2 p-5  flex justify-center">Каталог</h2>
 
             <div className=" flex flex-wrap md:-m-2 justify-evenly md:justify-center">
-              <div className="flex  lg:mr-8 flex-wrap">
-                <div className="w-full p-[20px] lg:p-p-10 ">
-                  <Card
+              <div className="flex xl:w-1/3 flex-wrap ">
+                <div className="w-full p-[20px] md:p-p-10">
+                  <Catalog
                     title="Сигареты"
-                    imageImg="img/cigaronne.webp"
+                    imageImg="./img/cigaronne.webp"
                     scrollToMiniMap={scrollToMiniMap}
                   />
                 </div>
               </div>
 
-              <div className="flex xl:w-1/3 flex-wrap ">
+              {/* <div className="flex xl:w-1/3 flex-wrap ">
                 <div className="w-full p-[20px] md:p-p-10 ">
-                  <Catalog 
+                  <Catalog
                     title="Электронные сигареты"
-                    imageImg="img/34194.970.png"
+                    imageImg="./img/34194.970.png"
                     scrollToMiniMap={scrollToMiniMap}
                   />
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex xl:w-1/3 flex-wrap ">
                 <div className="w-full p-[20px] md:p-p-10">
                   <Catalog
                     title="Самокрутоки и трубки"
-                    imageImg="img/middle.png"
+                    imageImg="./img/middle.png"
                     scrollToMiniMap={scrollToMiniMap}
                   />
                 </div>
@@ -89,7 +86,7 @@ function App() {
                 <div className="w-full p-[20px] md:p-p-10">
                   <Catalog
                     title=" Стики"
-                    imageImg="img/iqos.png"
+                    imageImg="./img/iqos.png"
                     scrollToMiniMap={scrollToMiniMap}
                   />
                 </div>
@@ -98,30 +95,26 @@ function App() {
                 <div className="w-full p-[20px] md:p-p-10">
                   <Catalog
                     title="Всё для кальянов"
-                    imageImg="img/fona.png"
+                    imageImg="./img/fona.png"
                     scrollToMiniMap={scrollToMiniMap}
                   />
                 </div>
               </div>
-              {/* <div className="flex w-1/3 flex-wrap">
-      <div className="w-full p-[40px] md:p-p-10">
-      <Catalog title="Папиросы" imageImg="img/scale_1200.png"/>
-      </div>
-    </div> */}
+              
               <div className="flex xl:w-1/3 flex-wrap">
-                <div className="w-full lg:pl-0 p-[20px] md:p-p-10">
+                <div className="w-full p-[20px] md:p-p-10">
                   <Catalog
                     title="Сувенирная продукция"
-                    imageImg="img/4.png"
+                    imageImg="./img/4.png"
                     scrollToMiniMap={scrollToMiniMap}
                   />
                 </div>
               </div>
-              <div className="flex  flex-wrap ">
-                <div className="w-full p-[20px] lg:pl-0  ">
-                  <Card
+              <div className="flex xl:w-1/3 flex-wrap">
+                <div className="w-full p-[20px] md:p-p-10">
+                  <Catalog
                     title="Папиросы"
-                    imageImg="img/scale_1200.png"
+                    imageImg="./img/scale_1200.png"
                     scrollToMiniMap={scrollToMiniMap}
                   />
                 </div>
