@@ -12,6 +12,7 @@ import Maps from "./components/Maps";
 import Form from "./components/Form";
 import Popup from "./components/Popup";
 import React from "react";
+import Accordion from "./components/DndCatalog";
 
 function App() {
   const miniMap = React.useRef(null);
@@ -32,6 +33,8 @@ function App() {
   const scrollToDescription = () => {
     companyDescription.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  
   return (
     <>
       {!checkAge ? <Popup clickConfirmAge={clickConfirmAge} /> : ""}
@@ -121,6 +124,7 @@ function App() {
               </div>
             </div>
           </div>
+          <Accordion/>
           <div
             ref={companyDescription}
             className="steps mt-[80px] xl:mt-[60px] relative z-20"
