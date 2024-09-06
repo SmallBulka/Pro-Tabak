@@ -28,6 +28,7 @@
     "react-scroll-to-element": "^0.2.0",
     "styled-components": "^6.1.13",
     "tailwind-merge": "^2.4.0",
+    "tw-elements-react": "^1.0.0-alpha-end",
     "ymaps": "^0.2.1"
   },
   "devDependencies": {

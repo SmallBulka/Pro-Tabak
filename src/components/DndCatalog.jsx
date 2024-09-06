@@ -1,19 +1,81 @@
 import  Circle  from "../assets/Circle";
+// import "tw-elements-react/dist/css/tw-elements-react.min.css";
 // import  { useState } from "react";
-
+import { TESelect } from "tw-elements-react";
 const Accordion = () => {
-    // const [dropdownState, setDropdownState] = useState({ open: false });
-    // const handleDropdownClick = () =>
-    //     setDropdownState({ open: !dropdownState.open });
+    const data = [
+        { text: "Россия", value: 1 },
+        { text: "Германия", value: 2 },
+        { text: "Армения", value: 3 },
+        { text: "Корея", value: 4 },
+      ];
+      const brand = [
+        { text: "Россия", value: 1 },
+        { text: "Германия", value: 2 },
+        { text: "Армения", value: 3 },
+        { text: "Корея", value: 4 },
+      ];
+
   return (
+
+   <div className="flex justify-center">
     
-<div className="relative xl:w-[1110px] lg:h-[400px] bg-[#191d21] rounded-[20px] overflow-hidden
+<div className="relative xl:w-[1110px] lg:h-[800px] bg-[#191d21] rounded-[20px] overflow-hidden
      before:transform before:skew-y-[345deg] before:transition-[0.5s]
      card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg] p-6">
 
+<div className="flex justify-end">
+      <div className="relative mb-3 w-60 pt-5">
+        <TESelect data={data} multiple label="Страна" />
+      </div>
+    </div>
+    <div className="flex justify-end">
+      <div className="relative mb-3 w-60 pt-5">
+        <TESelect data={brand} multiple label="Бренд" />
+      </div>
+    </div>
 
 
 
+
+
+
+<div
+  className="relative flex "
+  data-twe-input-wrapper-init
+  data-twe-input-group-ref>
+  <input
+    type="search"
+    className="peer block min-h-[auto] w-40 rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+    placeholder="Search"
+    aria-label="Search"
+    id="exampleFormControlInput"
+    aria-describedby="basic-addon1" />
+  <label
+    
+    className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+    >Поиск
+  </label>
+  <button
+    className="relative z-[2] -ms-0.5 flex items-center rounded-e bg-primary px-5  text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+    type="button"
+    id="button-addon1"
+    data-twe-ripple-init
+    data-twe-ripple-color="light">
+    <span className="[&>svg]:h-5 [&>svg]:w-5">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+       
+        stroke="currentColor">
+        <path
+          
+          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+      </svg>
+    </span>
+  </button>
+</div>
 
 {/* <button onClick={handleDropdownClick} id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox" 
 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
@@ -97,6 +159,7 @@ className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-n
 		</a> */}
 	</div>
     </div>
+    </div> 
   );
 };
 
