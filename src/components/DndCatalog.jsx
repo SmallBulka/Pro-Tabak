@@ -1,7 +1,10 @@
 import  Circle  from "../assets/Circle";
-// import "tw-elements-react/dist/css/tw-elements-react.min.css";
+
 // import  { useState } from "react";
-import { TESelect } from "tw-elements-react";
+
+
+        
+ import { TESelect } from "tw-elements-react";
 const Accordion = () => {
     const data = [
         { text: "Россия", value: 1 },
@@ -10,11 +13,12 @@ const Accordion = () => {
         { text: "Корея", value: 4 },
       ];
       const brand = [
-        { text: "Россия", value: 1 },
-        { text: "Германия", value: 2 },
-        { text: "Армения", value: 3 },
-        { text: "Корея", value: 4 },
+        { text: "пач1", value: 1 },
+        { text: "мальборо", value: 2 },
+        { text: "ротманс", value: 3 },
+        { text: "ява", value: 4 },
       ];
+
 
   return (
 
@@ -23,60 +27,45 @@ const Accordion = () => {
 <div className="relative xl:w-[1110px] lg:h-[800px] bg-[#191d21] rounded-[20px] overflow-hidden
      before:transform before:skew-y-[345deg] before:transition-[0.5s]
      card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg] p-6">
-
-<div className="flex justify-end">
-      <div className="relative mb-3 w-60 pt-5">
+<div className="flex justify-end ">
+<div className="flex justify-end ">
+      <div className="relative mb-3 w-60 pt-5 ">
         <TESelect data={data} multiple label="Страна" />
       </div>
-    </div>
+    </div> 
     <div className="flex justify-end">
       <div className="relative mb-3 w-60 pt-5">
         <TESelect data={brand} multiple label="Бренд" />
       </div>
-    </div>
-
-
-
-
-
-
-<div
-  className="relative flex "
-  data-twe-input-wrapper-init
-  data-twe-input-group-ref>
-  <input
-    type="search"
-    className="peer block min-h-[auto] w-40 rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-    placeholder="Search"
-    aria-label="Search"
-    id="exampleFormControlInput"
-    aria-describedby="basic-addon1" />
-  <label
+    </div> 
     
-    className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
-    >Поиск
-  </label>
-  <button
-    className="relative z-[2] -ms-0.5 flex items-center rounded-e bg-primary px-5  text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-    type="button"
-    id="button-addon1"
-    data-twe-ripple-init
-    data-twe-ripple-color="light">
-    <span className="[&>svg]:h-5 [&>svg]:w-5">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-       
-        stroke="currentColor">
-        <path
-          
-          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-      </svg>
-    </span>
-  </button>
-</div>
+    <div className="relative mb-3 w-60 pt-5">
+          <div className="relative mb-4 flex w-full flex-wrap items-stretch">
+              <input
+                  type="search"
+                  className="relative m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                  placeholder="Поиск"
+                  aria-label="Search"
+                  aria-describedby="button-addon2" />
 
+              {/* <!--Search icon--> */}
+              <span
+                  className="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                  id="basic-addon2">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="h-5 w-5">
+                      <path
+                          fillRule="evenodd"
+                          d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                          clipRule="evenodd" />
+                  </svg>
+              </span>
+          </div>
+      </div>
+      </div>
 {/* <button onClick={handleDropdownClick} id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox" 
 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
  focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center
