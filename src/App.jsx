@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import LogoTicker from "./components/LogoTicker";
 import Catalog from "./components/Catalog";
-// import Card from "./components/Card";
+import Card from "./components/Card";
 import Shopping from "./assets/Shopping";
 import Handshake from "./assets/Handshake";
 import Warranty from "./assets/Warranty";
@@ -67,16 +67,6 @@ function App() {
                 </div>
               </div>
 
-              {/* <div className="flex xl:w-1/3 flex-wrap ">
-                <div className="w-full p-[20px] md:p-p-10 ">
-                  <Catalog
-                    title="Электронные сигареты"
-                    imageImg="./img/34194.970.png"
-                    scrollToMiniMap={scrollToMiniMap}
-                  />
-                </div>
-              </div> */}
-
               <div className="flex xl:w-1/3 flex-wrap ">
                 <div className="w-full p-[20px] md:p-p-10">
                   <Catalog
@@ -126,6 +116,7 @@ function App() {
             </div>
           </div>
           <Accordion/>
+          <Card/>
           <div
             ref={companyDescription}
             className="steps mt-[80px] xl:mt-[60px] relative z-20"

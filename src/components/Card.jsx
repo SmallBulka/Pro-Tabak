@@ -2,39 +2,37 @@ function Card(props) {
   return (
     <section>
       <div
-        className="relative w-[280px] md:w-[320px] lg:w-[710px] h-[480px] bg-[#191919] rounded-[20px] overflow-hidden
-    before:content-[''] before:absolute before:top-[-50%] before:w-full before:h-full before:bg-[#fffa] 
-   before:transform before:skew-y-[345deg] before:transition-[0.5s]
-   card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg]
+        className="relative w-[380px] h-[250px] bg-black
    "
       >
         <div
-          className="relative w-full flex justify-center items-center pt-5 z-10
+          className="relative w-full flex justify-between items-center pt-5 z-10
    "
         >
           {/* <div className="bottom-0 left-0 font-semibold text-6xl text-black opacity-10"></div> */}
+          <div className="">
+          <h2>название</h2>
+          <p>fbfb</p>
+          </div>
           <img
-            src={props.imageImg}
+            src='./img/4.png'
             alt="mouse corsair"
-            className="h-[300px] w-auto"
+            className="h-[200px] w-auto"
           />
         </div>
 
         <div
           className="relative  flex justify-center items-center flex-col z-20
   "
+
         >
           <h3 className="text-white text-xl font-medium tracking-wide text-center ">
             {props.title}
           </h3>
 
-          <div className="relative container">
-            <span className="absolute  text-[7em] font-extrabold italic text-white/10 ">
-              Pro-Tabak
-            </span>
-          </div>
+          
           <p
-            onClick={() => props.scrollToMiniMap()}
+            
             className="relative py-2.5 px-7 mt-6 text-black no-underline 
     bg-[#ffce00] rounded-[30px] uppercase tracking-[1px] transition duration-500 "
           >
