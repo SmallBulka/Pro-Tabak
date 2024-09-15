@@ -5,14 +5,17 @@ import  Circle  from "../assets/Circle";
 
         
  import { TESelect } from "tw-elements-react";
+import Card from "./Card";
 const Accordion = () => {
     const data = [
+      { text: "muhj" },
         { text: "Россия", value: 1 },
         { text: "Германия", value: 2 },
         { text: "Армения", value: 3 },
         { text: "Корея", value: 4 },
       ];
       const brand = [
+        { text: "muhj" , value: 0 },
         { text: "пач1", value: 1 },
         { text: "мальборо", value: 2 },
         { text: "ротманс", value: 3 },
@@ -24,20 +27,21 @@ const Accordion = () => {
 
    <div className="flex justify-center">
     
-<div className="relative xl:w-[1110px] lg:h-[800px] bg-[#191d21] rounded-[20px] overflow-hidden
+<div className="relative xl:w-[1500px] lg:h-[1200px] bg-[#191d21] rounded-[20px] overflow-hidden
      before:transform before:skew-y-[345deg] before:transition-[0.5s]
      card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg] p-6">
 <div className="flex absolute p-6 ml-60">
 <div className="flex ">
       <div className="relative  w-40  pr-6">
       
-        <TESelect data={data} multiple label="Страна" />
+        <TESelect data={data}   label="Страна" />
       </div>
     </div> 
     <div className="flex justify-end pr-6">
       <div className="relative  w-40 ">
-        <TESelect data={brand} multiple label="Бренд" />
+        <TESelect data={brand}  label="Бренд" />
       </div>
+      
     </div> 
     
     <div className="relative   ">
@@ -65,10 +69,19 @@ const Accordion = () => {
                   </svg>
               </span>
           </div>
-      </div>
-      </div>
+           </div>
+           <div className="absolute grid grid-rows-2 grid-flow-col gap-4 pt-[70px] ">
+            
+<Card/>
+<Card/>
+<Card/>
+<Card/>
+<Card/>
+<Card/>
+</div>
 
-
+      </div>
+      
     <div className="flex flex-col mt-3 w-48  text-gray-400  rounded">
       
 		<a className="flex items-center w-full px-6 mt-3" href="#">
