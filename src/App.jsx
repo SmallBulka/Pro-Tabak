@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import LogoTicker from "./components/LogoTicker";
 import Catalog from "./components/Catalog";
-import Card from "./components/Card";
+
 import Shopping from "./assets/Shopping";
 import Handshake from "./assets/Handshake";
 import Warranty from "./assets/Warranty";
@@ -116,7 +116,7 @@ function App() {
             </div>
           </div>
           <Accordion/>
-          <Card/>
+          
           <div
             ref={companyDescription}
             className="steps mt-[80px] xl:mt-[60px] relative z-20"
