@@ -70,7 +70,7 @@ const Accordion = () => {
             </div>
           </div>
           <div className="absolute grid grid-rows-3 grid-flow-col gap-4 pt-[70px] ">
-            {cigarettes.kg.map((obj,index)=>(<Card {...obj} />))}
+            {cigarettes.peppell.map((obj,index)=>(<Card {...obj} />))}
             {/* <Card
               title="Peppell luxury Black"
               imageImg="./img/Screenshot_2.png"

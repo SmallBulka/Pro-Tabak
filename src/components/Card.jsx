@@ -1,7 +1,7 @@
 
 
 import cigarettes from "../assets/cigarettes"
-function Card({name, resin, nicotine}) {
+function Card({name, resin, nicotine, imageImg}) {
 
   return (
     
@@ -12,7 +12,7 @@ function Card({name, resin, nicotine}) {
         <a href="#!">
           <img
             className=""
-            src=''
+            src={imageImg}
             alt="" />
         </a>
         <div className="p-6">

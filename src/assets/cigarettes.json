@@ -1,21 +1,40 @@
 {
   "peppell": [
-    {
-      "name": "fantom",
-      "type": ["red", "blue", "gold"],
-      "sizes": ["king size"]
-    },
-    { "name": "2222", "type": ["red", "blue"], "sizes": ["king size"] },
-    {
-      "name": "peppell",
-      "type": ["black", "blue"],
-      "sizes": ["king size", "ssl"]
-    },
-    { "name": "хортиця", "type": ["red", "blue"], "sizes": ["king size"] },
-    { "name": "бiле сонце", "type": ["classic"], "sizes": ["king size"] },
-    { "name": "хортиця", "type": ["classic"], "sizes": ["king size"] }
+
+      { "name": "Fantom Classic Gold", "imageImg": "img/FantomG.png", "resin": 7, "nicotine": 0.5 },
+      { "name": "Fantom Classic Blue", "imageImg": "img/FantomB.png", "resin": 8, "nicotine": 0.6 },
+      { "name": "Fantom Classic Red", "imageImg": "img/FantomR.png", "resin": 10, "nicotine": 0.7 },
+    
+      { "name": "2222 Blue Label", "imageImg": "img/2222B.png", "resin": 9, "nicotine": 0.8 },
+      { "name": "2222 Red Label", "imageImg": "img/2222R.png", "resin": 10, "nicotine": 0.9 },
+
+      { "name": "Peppell Luxury Gold", "imageImg": "img/peppell1.png", "resin": 6, "nicotine": 0.4 },
+      { "name": "Peppell Luxury Blue", "imageImg": "img/peppell.png", "resin": 7, "nicotine": 0.6 },
+      { "name": "Peppell Luxury Black", "imageImg": "img/peppell3.png", "resin": 9, "nicotine": 0.7 },
+      { "name": "Peppell Super Slim Blue", "imageImg": "img/peppell.png", "resin": 7, "nicotine": 0.6 },
+      { "name": "Peppell Super Slim Black", "imageImg": "img/peppell3.png", "resin": 9, "nicotine": 0.7 },
+
+      { "name": "Хортиця Оригинальные Синяя", "imageImg": "img/ХортицяB.png", "resin": 8, "nicotine": 0.7 },
+      { "name": "Хортиця Оригинальные Красная", "imageImg": "img/ХортицяR.png", "resin": 9, "nicotine": 0.8 },
+
+      { "name": "Бiле Сонце Оригинальные", "imageImg": "img/Бiле СонцеK.png", "resin": 8, "nicotine": 0.7 },
+      { "name": "Бiле Сонце Классические", "imageImg": "img/Бiле СонцеO.png", "resin": 9, "nicotine": 0.8 },
+
+      { "name": "Dune Blue Label", "imageImg": "img/DuneB.png", "resin": 8, "nicotine": 0.6 },
+      { "name": "Dune Red Label", "imageImg": "img/DuneR.png", "resin": 10, "nicotine": 0.7 },
+
+      { "name": "NTO", "imageImg": "img/NTO.png", "resin": 8, "nicotine": 0.6 }
+
   ],
-  "jti": [],
+  "jti": [
+    { "name": "Camel Желтый", "imageImg": "img/Camel.png", "resin": 8, "nicotine": 0.6 },
+    { "name": "Camel Compact", "imageImg": "img/CamelC.png", "resin": 6, "nicotine": 0.5 },
+    { "name": "Camel Compact 100", "imageImg": "img/Camel100.png", "resin": 6, "nicotine": 0.5 },
+    { "name": "Camel Compact Cool Crush", "imageImg": "img/CamelCC.png", "resin": 6, "nicotine": 0.5 },
+    { "name": "Camel Compact Ruby", "imageImg": "img/CamelCR.png", "resin": 6, "nicotine": 0.5 },
+    { "name": "Camel Compact Special", "imageImg": "img/CamelCS.png", "resin": 6, "nicotine": 0.5 },
+    { "name": "Camel Compact Cool Crush", "imageImg": "img/CamelCC.png", "resin": 6, "nicotine": 0.5 },
+  ],
   "gt": [],
   "pmi": [
     {
