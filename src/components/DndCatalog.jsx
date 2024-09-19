@@ -23,7 +23,7 @@ const Accordion = () => {
   return (
     <div className="flex justify-center">
       <div
-        className="relative xl:w-[1500px] lg:h-[1200px] bg-[#191d21] rounded-[20px] overflow-hidden
+        className="relative xl:w-[1500px] lg:h-[2000px] bg-[#191d21] rounded-[20px] overflow-hidden
      before:transform before:skew-y-[345deg] before:transition-[0.5s]
      card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg] p-6"
       >
@@ -69,8 +69,10 @@ const Accordion = () => {
               </span>
             </div>
           </div>
-          <div className="absolute grid grid-rows-3 grid-flow-col gap-4 pt-[70px] ">
-            {cigarettes.peppell.map((obj,index)=>(<Card {...obj} />))}
+          <div className="absolute grid grid-rows-4 grid-flow-col gap-4 pt-[70px] ">
+            {/* {cigarettes.peppell.map((obj,index)=>(<Card {...obj} />))} */}
+            {/* {cigarettes.jti.map((obj,index)=>(<Card {...obj} />))} */}
+            {cigarettes.kg.map((obj,index)=>(<Card {...obj} />))}
             {/* <Card
               title="Peppell luxury Black"
               imageImg="./img/Screenshot_2.png"
