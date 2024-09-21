@@ -69,10 +69,47 @@ const Accordion = () => {
               </span>
             </div>
           </div>
-          <div className="absolute grid grid-rows-4 grid-flow-col gap-4 pt-[70px] ">
+          <div className="absolute grid grid-rows-6 grid-flow-col gap-4 pt-[70px] ">
             {/* {cigarettes.peppell.map((obj,index)=>(<Card {...obj} />))} */}
             {/* {cigarettes.jti.map((obj,index)=>(<Card {...obj} />))} */}
             {cigarettes.kg.map((obj,index)=>(<Card {...obj} />))}
+            
+
+            {/* это для перелистывания */}
+            <nav aria-label="Page navigation example">
+      <ul className="list-style-none flex">
+          <li>
+              <a
+                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                  href="#"
+                  aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+              </a>
+          </li>
+          <li>
+              <a
+                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                  href="#">1</a>
+          </li>
+          <li aria-current="page">
+              <a
+                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                  href="#">2</a>
+          </li>
+          <li>
+              <a
+                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                  href="#">3</a>
+          </li>
+          <li>
+              <a
+                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                  href="#"
+                  aria-label="Next"><span aria-hidden="true">&raquo;</span>
+              </a>
+          </li>
+      </ul>
+  </nav>
             {/* <Card
               title="Peppell luxury Black"
               imageImg="./img/Screenshot_2.png"
@@ -206,8 +243,13 @@ const Accordion = () => {
 			
 			<span className="ml-2 text-sm font-medium">Account</span>
 		</a> */}
+
+    
+ 
         </div>
+        
       </div>
+      
     </div>
   );
 };
