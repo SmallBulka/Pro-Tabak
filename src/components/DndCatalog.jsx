@@ -4,6 +4,7 @@ import cigarettes from "../assets/cigarettes";
 
 import { TESelect } from "tw-elements-react";
 import Card from "./Card";
+
 const Accordion = () => {
   const data = [
     { text: "muhj" },
@@ -72,184 +73,93 @@ const Accordion = () => {
           <div className="absolute grid grid-rows-6 grid-flow-col gap-4 pt-[70px] ">
             {/* {cigarettes.peppell.map((obj,index)=>(<Card {...obj} />))} */}
             {/* {cigarettes.jti.map((obj,index)=>(<Card {...obj} />))} */}
-            {cigarettes.kg.map((obj,index)=>(<Card {...obj} />))}
-            
+            {cigarettes.kg.map((obj, index) => (
+              <Card {...obj} key={index} />
+            ))}
 
-            {/* это для перелистывания */}
+            {/* это для перелистывания (пагинация) */}
             <nav aria-label="Page navigation example">
-      <ul className="list-style-none flex">
-          <li>
-              <a
-                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                  href="#"
-                  aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-              </a>
-          </li>
-          <li>
-              <a
-                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                  href="#">1</a>
-          </li>
-          <li aria-current="page">
-              <a
-                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                  href="#">2</a>
-          </li>
-          <li>
-              <a
-                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                  href="#">3</a>
-          </li>
-          <li>
-              <a
-                  className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                  href="#"
-                  aria-label="Next"><span aria-hidden="true">&raquo;</span>
-              </a>
-          </li>
-      </ul>
-  </nav>
-            {/* <Card
-              title="Peppell luxury Black"
-              imageImg="./img/Screenshot_2.png"
-              resin="9"
-              nicotine="0.7"
-            />
-            <Card
-              title="Peppell Luxury Blue"
-              imageImg="./img/peppell.png"
-              resin="7"
-              nicotine="0.6"
-            />
-            <Card
-              title="Peppell Luxury Gold"
-              imageImg="./img/peppell1.png"
-              resin="6"
-              nicotine="0.4"
-            />
-
-            <Card
-              title="Fantom Classic Red"
-              imageImg="./img/FantomR.png"
-              resin="10"
-              nicotine="0.7"
-            />
-            <Card
-              title="Fantom Classic Blue"
-              imageImg="./img/FantomB.png"
-              resin="8"
-              nicotine="0.6"
-            />
-            <Card
-              title="Fantom Classic Gold"
-              imageImg="./img/FantomG.png"
-              resin="7"
-              nicotine="0.5"
-            />
-
-            <Card
-              title="Хортиця"
-              imageImg="./img/ХОРТИЦЯ-краснАЯ-642x1024.jpg"
-              types="Хортиця Оригинальные Синяя Хортиця Оригинальные Красная"
-              resin="9"
-              nicotine="0.8"
-            />
-            <Card
-              title="2222"
-              imageImg="./img/2222__Red-642x1024.jpg"
-              types="2222 Red Label 2222 Blue Label"
-              resin="10"
-              nicotine="0.9"
-            />
-            <Card
-              title="Бiле сонце"
-              imageImg="./img/БС-классические-642x1024.jpg"
-              types="Бiле сонце классические Бiле сонце оригинальные"
-              resin="9"
-              nicotine="0.8"
-            />
-            <Card
-              title="Peppell"
-              imageImg="./img/Peppell_Black.jpg"
-              types="Peppell luxury black Peppell Luxury Blue Peppell Luxury Gold"
-              resin="9"
-              nicotine="0.7"
-            />
-            <Card
-              title="Peppell"
-              imageImg="./img/Peppell_Black.jpg"
-              types="Peppell luxury black Peppell Luxury Blue Peppell Luxury Gold"
-              resin="9"
-              nicotine="0.7"
-            /> */}
+              <ul className="list-style-none flex">
+                <li>
+                  <p
+                    className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">&laquo;</span>
+                  </p>
+                </li>
+                <li>
+                  <p className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer">
+                    1
+                  </p>
+                </li>
+                <li aria-current="page">
+                  <p className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer">
+                    2
+                  </p>
+                </li>
+                <li>
+                  <p className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer">
+                    3
+                  </p>
+                </li>
+                <li>
+                  <p
+                    className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer"
+                    aria-label="Next"
+                  >
+                    <span aria-hidden="true">&raquo;</span>
+                  </p>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
 
         <div className="flex flex-col mt-3 w-48  text-gray-400  rounded">
-          <a className="flex items-center w-full px-6 mt-3" href="#">
+          <p className="flex items-center w-full px-6 mt-3">
             <Circle />
             <span className="ml-2 text-sm font-bold">Каталог</span>
-          </a>
+          </p>
 
           <div className="w-full px-2">
             <div className="flex flex-col items-center w-full mt-3 border-t border-gray-700">
-              <a
-                className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
-                href="#"
-              >
+              <p className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300">
                 <span className="ml-2 text-sm font-medium">
                   Кальяны, табак, аксессуары
                 </span>
-              </a>
+              </p>
               <div className="flex flex-col items-center w-full mt-2 border-t border-gray-700"></div>
-              <a
-                className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
-                href="#"
-              >
+              <p className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300">
                 <span className="ml-2 text-sm font-medium">Самокрутки</span>
-              </a>
+              </p>
               <div className="flex flex-col items-center w-full mt-2 border-t border-gray-700"></div>
-              <a
-                className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
-                href="#"
-              >
+              <p className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300">
                 <span className="ml-2 text-sm font-medium">
                   Системы нагревания табака
                 </span>
-              </a>
+              </p>
               <div className="flex flex-col items-center w-full mt-2 border-t border-gray-700"></div>
-              <a
-                className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
-                href="#"
-              >
+              <p className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300">
                 <span className="ml-2 text-sm font-medium">
                   Сигары и сигариллы
                 </span>
-              </a>
+              </p>
             </div>
             <div className="flex flex-col items-center w-full mt-2 border-t border-gray-700">
-              <a
-                className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
-                href="#"
-              >
+              <p className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300">
                 <span className="ml-2 text-sm font-medium">
                   Сигареты папиросы
                 </span>
-              </a>
+              </p>
             </div>
           </div>
-          {/* <a className="flex items-center justify-center w-full h-16 mt-auto bg-gray-800 hover:bg-gray-700 hover:text-gray-300" href="#">
+          {/* <p className="flex items-center justify-center w-full h-16 mt-auto bg-gray-800 hover:bg-gray-700 hover:text-gray-300" >
 			
 			<span className="ml-2 text-sm font-medium">Account</span>
-		</a> */}
-
-    
- 
+		</p> */}
         </div>
-        
       </div>
-      
     </div>
   );
 };
