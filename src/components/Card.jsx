@@ -1,10 +1,10 @@
 // eslint-disable-next-line react/prop-types
 function Card({ name, resin, nicotine, imageImg }) {
   return (
-    <div className="flex flex-col pt-2 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+    <div className="flex flex-col pt-2 rounded-lg bg-white w-[200px] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
       <div className="h-[150px] flex justify-center items-center">
         <a href="#!">
-          <img className="imgGradient" src={imageImg} alt="" />
+          <img className="imgGradient w-[150px]" src={imageImg} alt="" />
         </a>
       </div>
       <div className="p-6">

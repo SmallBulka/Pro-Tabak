@@ -28,49 +28,52 @@ const Accordion = () => {
      before:transform before:skew-y-[345deg] before:transition-[0.5s]
      card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg] p-6"
       >
-        <div className="flex absolute p-6 ml-60">
-          <div className="flex ">
-            <div className="relative  w-40  pr-6">
-              <TESelect data={data} label="Страна" />
+        <div className="flex absolute p-6  ml-60 flex-row w-[calc(100%-12em)]">
+          <div className="flex absolute   w-full justify-start">
+            <div className="flex ">
+              <div className="relative  w-40  pr-6">
+                <TESelect data={data} label="Страна" />
+              </div>
             </div>
-          </div>
-          <div className="flex justify-end pr-6">
-            <div className="relative  w-40 ">
-              <TESelect data={brand} label="Бренд" />
+            <div className="flex justify-end pr-6">
+              <div className="relative  w-40 ">
+                <TESelect data={brand} label="Бренд" />
+              </div>
             </div>
-          </div>
 
-          <div className="relative   ">
-            <div className="relative mb-4 flex w-full flex-wrap items-stretch">
-              <input
-                type="search"
-                className="relative w-50 m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-                placeholder="Поиск"
-                aria-label="Search"
-                aria-describedby="button-addon2"
-              />
+            <div className="relative   ">
+              <div className="relative mb-4 flex w-full flex-wrap items-stretch">
+                <input
+                  type="search"
+                  className="relative w-50 m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                  placeholder="Поиск"
+                  aria-label="Search"
+                  aria-describedby="button-addon2"
+                />
 
-              {/* <!--Search icon--> */}
-              <span
-                className="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
-                id="basic-addon2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="h-5 w-5"
+                {/* <!--Search icon--> */}
+                <span
+                  className="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                  id="basic-addon2"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </div>
             </div>
           </div>
-          <div className="absolute grid grid-rows-6 grid-flow-col gap-4 pt-[70px] ">
+
+          <div className="w-full pt-[70px] grid grid-cols-[repeat(auto-fill,_200px)] gap-4 h-56  ">
             {/* {cigarettes.peppell.map((obj,index)=>(<Card {...obj} />))} */}
             {/* {cigarettes.jti.map((obj,index)=>(<Card {...obj} />))} */}
             {cigarettes.kg.map((obj, index) => (
