@@ -1,20 +1,22 @@
 import Circle from "../assets/Circle";
-import cigarettes from "../assets/cigarettes";
+
+import { useSelector } from "react-redux";
 // import  { useState } from "react";
 
 import { TESelect } from "tw-elements-react";
 import Card from "./Card";
 
 const Accordion = () => {
+  const { items } = useSelector((state) => state.cigarettes);
   const data = [
-    { text: "muhj" },
+    { text: "Любая" },
     { text: "Россия", value: 1 },
     { text: "Германия", value: 2 },
     { text: "Армения", value: 3 },
     { text: "Корея", value: 4 },
   ];
   const brand = [
-    { text: "muhj", value: 0 },
+    { text: "Любой", value: 0 },
     { text: "пач1", value: 1 },
     { text: "мальборо", value: 2 },
     { text: "ротманс", value: 3 },
@@ -76,9 +78,10 @@ const Accordion = () => {
           <div className="w-full pt-[70px] grid grid-cols-[repeat(auto-fill,_200px)] gap-4 h-56  ">
             {/* {cigarettes.peppell.map((obj,index)=>(<Card {...obj} />))} */}
             {/* {cigarettes.jti.map((obj,index)=>(<Card {...obj} />))} */}
-            {cigarettes.kg.map((obj, index) => (
-              <Card {...obj} key={index} />
-            ))}
+
+            {items
+              .map((obj, index) => <Card {...obj} key={index} />)
+              .slice(0, 10)}
 
             {/* это для перелистывания (пагинация) */}
             <nav aria-label="Page navigation example">
