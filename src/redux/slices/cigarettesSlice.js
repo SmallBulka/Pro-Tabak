@@ -32,6 +32,7 @@ import cigarettesJSON from "../../assets/cigarettes.json";
 const initialState = {
   items: cigarettesJSON,
   status: "loading",
+  currentPage: 1,
 };
 
 export const cigarettesSlice = createSlice({
@@ -40,6 +41,9 @@ export const cigarettesSlice = createSlice({
   reducers: {
     setItems: (state, action) => {
       state.items = action.payload;
+    },
+    setCurrentPage: (state, action) => {
+      state.currentPage = action.payload;
     },
   },
   //   extraReducers: (builder) => {
@@ -60,6 +64,6 @@ export const cigarettesSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { setItems } = cigarettesSlice.actions;
+export const { setItems, setCurrentPage } = cigarettesSlice.actions;
 
 export default cigarettesSlice.reducer;

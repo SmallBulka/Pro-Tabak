@@ -1,50 +1,93 @@
 import Circle from "../assets/Circle";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 // import  { useState } from "react";
 
 import { TESelect } from "tw-elements-react";
 import Card from "./Card";
+import PaginationItem from "./PaginationItem";
+import { useRef, useState, useEffect } from "react";
+import { setCurrentPage } from "../redux/slices/cigarettesSlice";
+import { setBrand, setCountry } from "../redux/slices/filterSlice";
 
 const Accordion = () => {
-  const { items } = useSelector((state) => state.cigarettes);
-  const data = [
-    { text: "Любая" },
-    { text: "Россия", value: 1 },
-    { text: "Германия", value: 2 },
-    { text: "Армения", value: 3 },
-    { text: "Корея", value: 4 },
+  const dispatch = useDispatch();
+  const { items, currentPage } = useSelector((state) => state.cigarettes);
+  const { brand, country } = useSelector((state) => state.filter);
+  const [itemsPerPage, setItemsPerPage] = useState(1);
+  const itemsRef = useRef(null);
+
+  const [paginationArray, setPaginationArray] = useState([]);
+  useEffect(() => {
+    setItemsPerPage(Math.floor((itemsRef.current.offsetWidth - 28) / 216) * 2);
+
+    setPaginationArray([
+      ...Array(
+        Math.ceil(
+          items.filter(
+            (obj) =>
+              (country === obj.country || country === "") &
+              (brand === obj.brand || brand === "")
+          ).length /
+            Math.floor((itemsRef.current.offsetWidth - 28) / 216) /
+            2
+        )
+      ),
+    ]);
+  }, [brand, country]);
+  const countryArray = [
+    { text: "Любая", value: "" },
+    { text: "Россия", value: "Russia" },
+    { text: "Германия", value: "Germany" },
+    { text: "Армения", value: "Armenia" },
+    { text: "Корея", value: "Korea" },
   ];
-  const brand = [
-    { text: "Любой", value: 0 },
-    { text: "пач1", value: 1 },
-    { text: "мальборо", value: 2 },
-    { text: "ротманс", value: 3 },
-    { text: "ява", value: 4 },
+  const brandArray = [
+    { text: "Любой", value: "" },
+    { text: "K&G(Esse, Bohem)", value: "kg" },
+    { text: "Филлип Моррис (Marlboro, Parliament,Next)", value: "pmi" },
+    { text: "BAT (Ява, Kent, Rothmans)", value: "bat" },
+    { text: "JTI (Wingston, Camel,LD)", value: "jti" },
+    { text: "VonEiken (Chapman, Pepe,Harvest)", value: "VonEiken" },
+    { text: "Grand Tobacco (Vip,Triumph,Ararat)", value: "gt" },
+    { text: "Cigaronne", value: "cigaronne" },
   ];
 
   return (
     <div className="flex justify-center">
       <div
-        className="relative xl:w-[1500px] lg:h-[2000px] bg-[#191d21] rounded-[20px] overflow-hidden
+        className="relative w-full lg:h-[2000px] bg-[#191d21] rounded-[20px] overflow-hidden
      before:transform before:skew-y-[345deg] before:transition-[0.5s]
      card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg] p-6"
       >
-        <div className="flex absolute p-6  ml-60 flex-row w-[calc(100%-12em)]">
-          <div className="flex absolute   w-full justify-start">
+        <div className="flex absolute p-6  ml-60 flex-col w-[calc(100%-12em)] h-full">
+          {/* группировка товаров */}
+          <div className="flex w-full justify-start flex-wrap">
             <div className="flex ">
-              <div className="relative  w-40  pr-6">
-                <TESelect data={data} label="Страна" />
+              <div className="relative  w-[200px]  pr-6 pb-2">
+                <TESelect
+                  data={countryArray}
+                  label="Страна"
+                  onOptionSelect={(obj) => dispatch(setCountry(obj.value))}
+                />
               </div>
             </div>
-            <div className="flex justify-end pr-6">
-              <div className="relative  w-40 ">
-                <TESelect data={brand} label="Бренд" />
+            <div className="flex justify-end pr-6 pb-2">
+              <div className="relative  w-[400px] ">
+                <TESelect
+                  visibleOptions={8}
+                  data={brandArray}
+                  label="Бренд"
+                  onOptionSelect={(obj) => {
+                    dispatch(setBrand(obj.value));
+                    console.log(obj.value);
+                  }}
+                />
               </div>
             </div>
 
-            <div className="relative   ">
-              <div className="relative mb-4 flex w-full flex-wrap items-stretch">
+            <div className="relative">
+              <div className="relative mb-4 flex w-full flex-wrap items-stretch pb-2">
                 <input
                   type="search"
                   className="relative w-50 m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
@@ -74,52 +117,72 @@ const Accordion = () => {
               </div>
             </div>
           </div>
-
-          <div className="w-full pt-[70px] grid grid-cols-[repeat(auto-fill,_200px)] gap-4 h-56  ">
-            {/* {cigarettes.peppell.map((obj,index)=>(<Card {...obj} />))} */}
-            {/* {cigarettes.jti.map((obj,index)=>(<Card {...obj} />))} */}
-
+          {/* блок с товарами */}
+          <div
+            className="w-full pt-[20px] grid grid-cols-[repeat(auto-fill,_200px)] gap-4  "
+            ref={itemsRef}
+          >
             {items
-              .map((obj, index) => <Card {...obj} key={index} />)
-              .slice(0, 10)}
+              .filter(
+                (obj) =>
+                  (country === obj.country || country === "") &
+                  (brand === obj.brand || brand === "")
+              )
 
-            {/* это для перелистывания (пагинация) */}
-            <nav aria-label="Page navigation example">
-              <ul className="list-style-none flex">
-                <li>
-                  <p
-                    className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer"
-                    aria-label="Previous"
-                  >
-                    <span aria-hidden="true">&laquo;</span>
-                  </p>
-                </li>
-                <li>
-                  <p className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer">
-                    1
-                  </p>
-                </li>
-                <li aria-current="page">
-                  <p className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer">
-                    2
-                  </p>
-                </li>
-                <li>
-                  <p className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer">
-                    3
-                  </p>
-                </li>
-                <li>
-                  <p
-                    className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white cursor-pointer"
-                    aria-label="Next"
-                  >
-                    <span aria-hidden="true">&raquo;</span>
-                  </p>
-                </li>
-              </ul>
-            </nav>
+              .map((obj, index) => <Card {...obj} key={index} />)
+
+              .slice(
+                (currentPage - 1) * itemsPerPage,
+                currentPage * itemsPerPage
+              )}
           </div>
+          {/* это для перелистывания (пагинация) */}
+          <nav aria-label="Page navigation example" className="pt-20">
+            <ul className="list-style-none flex">
+              <PaginationItem
+                onClickPage={() => {
+                  if (currentPage > 1) {
+                    dispatch(setCurrentPage(currentPage - 1));
+                  }
+                }}
+                value={<span aria-hidden="true">&laquo;</span>}
+              />
+              {[...Array(3)].map((obj, index) => (
+                <PaginationItem
+                  onClickPage={() => {
+                    dispatch(setCurrentPage(index + 1));
+                  }}
+                  key={index}
+                  value={index + 1}
+                />
+              ))}
+              {currentPage > 4 && (
+                <PaginationItem onClickPage={() => {}} value={"..."} />
+              )}
+              {currentPage > 3 && (
+                <PaginationItem onClickPage={() => {}} value={currentPage} />
+              )}
+              {currentPage < paginationArray.length && (
+                <PaginationItem onClickPage={() => {}} value={"..."} />
+              )}
+              {currentPage < paginationArray.length && (
+                <PaginationItem
+                  onClickPage={() => {
+                    dispatch(setCurrentPage(paginationArray.length));
+                  }}
+                  value={paginationArray.length}
+                />
+              )}
+              <PaginationItem
+                onClickPage={() => {
+                  if (currentPage < paginationArray.length) {
+                    dispatch(setCurrentPage(currentPage + 1));
+                  }
+                }}
+                value={<span aria-hidden="true">&raquo;</span>}
+              />
+            </ul>
+          </nav>
         </div>
 
         <div className="flex flex-col mt-3 w-48  text-gray-400  rounded">
