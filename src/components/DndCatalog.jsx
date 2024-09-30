@@ -1,40 +1,47 @@
 import Circle from "../assets/Circle";
-
+import debounce from "debounce";
 import { useSelector, useDispatch } from "react-redux";
 // import  { useState } from "react";
 
 import { TESelect } from "tw-elements-react";
 import Card from "./Card";
-import PaginationItem from "./PaginationItem";
-import { useRef, useState, useEffect } from "react";
-import { setCurrentPage } from "../redux/slices/cigarettesSlice";
-import { setBrand, setCountry } from "../redux/slices/filterSlice";
+
+import { useRef, useState, useCallback, useEffect } from "react";
+
+import {
+  setBrand,
+  setCountry,
+  setSearchValue,
+} from "../redux/slices/filterSlice";
+import Pagination from "./Pagination";
+import { setCurrentPage, setItemsWidth } from "../redux/slices/paginationSlice";
 
 const Accordion = () => {
   const dispatch = useDispatch();
-  const { items, currentPage } = useSelector((state) => state.cigarettes);
-  const { brand, country } = useSelector((state) => state.filter);
-  const [itemsPerPage, setItemsPerPage] = useState(1);
+  const inputRef = useRef(null);
   const itemsRef = useRef(null);
-
-  const [paginationArray, setPaginationArray] = useState([]);
+  const { items } = useSelector((state) => state.cigarettes);
+  const { brand, country, searchValue } = useSelector((state) => state.filter);
+  const { itemsPerPage, currentPage } = useSelector(
+    (state) => state.paginationSlice
+  );
+  const [localSearchValue, setLocalSearchValue] = useState("");
   useEffect(() => {
-    setItemsPerPage(Math.floor((itemsRef.current.offsetWidth - 28) / 216) * 2);
+    dispatch(setItemsWidth(itemsRef.current.offsetWidth));
+  }, []);
+  const updateSearchValue = useCallback(
+    debounce((str) => {
+      dispatch(setSearchValue(str));
+      dispatch(setCurrentPage(1));
+      // console.log(str);
+    }, 1000),
+    []
+  );
+  const onChangeInput = (event) => {
+    setLocalSearchValue(event.target.value);
+    updateSearchValue(event.target.value);
+  };
 
-    setPaginationArray([
-      ...Array(
-        Math.ceil(
-          items.filter(
-            (obj) =>
-              (country === obj.country || country === "") &
-              (brand === obj.brand || brand === "")
-          ).length /
-            Math.floor((itemsRef.current.offsetWidth - 28) / 216) /
-            2
-        )
-      ),
-    ]);
-  }, [brand, country]);
   const countryArray = [
     { text: "Любая", value: "" },
     { text: "Россия", value: "Russia" },
@@ -68,7 +75,10 @@ const Accordion = () => {
                 <TESelect
                   data={countryArray}
                   label="Страна"
-                  onOptionSelect={(obj) => dispatch(setCountry(obj.value))}
+                  onOptionSelect={(obj) => {
+                    dispatch(setCountry(obj.value));
+                    dispatch(setCurrentPage(1));
+                  }}
                 />
               </div>
             </div>
@@ -80,7 +90,7 @@ const Accordion = () => {
                   label="Бренд"
                   onOptionSelect={(obj) => {
                     dispatch(setBrand(obj.value));
-                    console.log(obj.value);
+                    dispatch(setCurrentPage(1));
                   }}
                 />
               </div>
@@ -89,8 +99,11 @@ const Accordion = () => {
             <div className="relative">
               <div className="relative mb-4 flex w-full flex-wrap items-stretch pb-2">
                 <input
+                  ref={inputRef}
+                  value={localSearchValue}
+                  onChange={(event) => onChangeInput(event)}
                   type="search"
-                  className="relative w-50 m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                  className="relative w-50 m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:focus:text-neutral-100 dark:placeholder:text-neutral-200 dark:focus:border-primary"
                   placeholder="Поиск"
                   aria-label="Search"
                   aria-describedby="button-addon2"
@@ -117,6 +130,7 @@ const Accordion = () => {
               </div>
             </div>
           </div>
+
           {/* блок с товарами */}
           <div
             className="w-full pt-[20px] grid grid-cols-[repeat(auto-fill,_200px)] gap-4  "
@@ -126,63 +140,18 @@ const Accordion = () => {
               .filter(
                 (obj) =>
                   (country === obj.country || country === "") &
+                  (obj.name.toLowerCase().includes(searchValue.toLowerCase()) ||
+                    searchValue === "") &
                   (brand === obj.brand || brand === "")
               )
-
               .map((obj, index) => <Card {...obj} key={index} />)
-
               .slice(
                 (currentPage - 1) * itemsPerPage,
                 currentPage * itemsPerPage
               )}
           </div>
           {/* это для перелистывания (пагинация) */}
-          <nav aria-label="Page navigation example" className="pt-20">
-            <ul className="list-style-none flex">
-              <PaginationItem
-                onClickPage={() => {
-                  if (currentPage > 1) {
-                    dispatch(setCurrentPage(currentPage - 1));
-                  }
-                }}
-                value={<span aria-hidden="true">&laquo;</span>}
-              />
-              {[...Array(3)].map((obj, index) => (
-                <PaginationItem
-                  onClickPage={() => {
-                    dispatch(setCurrentPage(index + 1));
-                  }}
-                  key={index}
-                  value={index + 1}
-                />
-              ))}
-              {currentPage > 4 && (
-                <PaginationItem onClickPage={() => {}} value={"..."} />
-              )}
-              {currentPage > 3 && (
-                <PaginationItem onClickPage={() => {}} value={currentPage} />
-              )}
-              {currentPage < paginationArray.length && (
-                <PaginationItem onClickPage={() => {}} value={"..."} />
-              )}
-              {currentPage < paginationArray.length && (
-                <PaginationItem
-                  onClickPage={() => {
-                    dispatch(setCurrentPage(paginationArray.length));
-                  }}
-                  value={paginationArray.length}
-                />
-              )}
-              <PaginationItem
-                onClickPage={() => {
-                  if (currentPage < paginationArray.length) {
-                    dispatch(setCurrentPage(currentPage + 1));
-                  }
-                }}
-                value={<span aria-hidden="true">&raquo;</span>}
-              />
-            </ul>
-          </nav>
+          <Pagination />
         </div>
 
         <div className="flex flex-col mt-3 w-48  text-gray-400  rounded">
