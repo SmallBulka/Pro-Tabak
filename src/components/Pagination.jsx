@@ -34,7 +34,7 @@ const Pagination = () => {
   return (
     <nav
       aria-label="Page navigation example"
-      className={itemsLenght < itemsPerPage ? "invisible" : "pt-20"}
+      className={itemsLenght < itemsPerPage ? "invisible" : "pt-10"}
     >
       <ul className="list-style-none flex">
         <PaginationItem
