@@ -36,7 +36,7 @@ const Pagination = () => {
       aria-label="Page navigation example"
       className={itemsLenght < itemsPerPage ? "invisible" : "pt-10"}
     >
-      <ul className="list-style-none flex">
+      <ul className="list-style-none flex ">
         <PaginationItem
           onClickPage={() => {
             if (currentPage > 1) {

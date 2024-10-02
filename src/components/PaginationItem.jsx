@@ -13,11 +13,11 @@ const PaginationItem = ({ onClickPage, value }) => {
         onClick={onClickPage}
         className={
           pageValue === currentPage
-            ? " bg-neutral-100 dark:bg-neutral-700 transition-all duration-300 rounded  "
+            ? " bg-neutral-100 dark:bg-neutral-500 transition-all duration-300 rounded  "
             : ""
         }
       >
-        <p className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300  dark:text-white  cursor-pointer">
+        <p className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-300 transition-all duration-300  dark:text-white  cursor-pointer">
           {value}
         </p>
       </li>

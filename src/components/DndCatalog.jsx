@@ -73,7 +73,7 @@ const Accordion = () => {
   return (
     <div className="flex justify-center">
       <div
-        className="relative w-[1250px] h-[1300px] lg:h-[850px] md:h-[900px] bg-[#191d21] rounded-[20px] 
+        className="relative w-[1250px] h-[1300px]  xl:h-[900px] bg-[#191d21] rounded-[20px] 
      before:transform before:skew-y-[345deg] before:transition-[0.5s]
      card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg] p-6"
       >
@@ -158,7 +158,7 @@ const Accordion = () => {
 
           {/* блок с товарами */}
           <div
-            className=" pt-[20px]  grid-cols-2  grid md:grid-cols-[repeat(auto-fill,_215px)] gap-4  "
+            className="   grid-cols-2  grid md:grid-cols-[repeat(auto-fill,_215px)] gap-4  "
             ref={itemsRef}
           >
             {items
