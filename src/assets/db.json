@@ -1,0 +1,3308 @@
+{
+  "cigarettes": [
+    {
+      "name": "Fantom Classic Gold",
+      "imageImg": "img/FantomG.png",
+      "resin": 7,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Fantom Classic Blue",
+      "imageImg": "img/FantomB.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Fantom Classic Red",
+      "imageImg": "img/FantomR.png",
+      "resin": 10,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "2222 Blue Label",
+      "imageImg": "img/2222B.png",
+      "resin": 9,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "2222 Red Label",
+      "imageImg": "img/2222R.png",
+      "resin": 10,
+      "nicotine": 0.9,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Peppell Luxury Gold",
+      "imageImg": "img/peppell1.png",
+      "resin": 6,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Peppell Luxury Blue",
+      "imageImg": "img/peppell.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Peppell Luxury Black",
+      "imageImg": "img/peppell3.png",
+      "resin": 9,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Peppell Super Slim Blue",
+      "imageImg": "img/peppell.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Peppell Super Slim Black",
+      "imageImg": "img/peppell3.png",
+      "resin": 9,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Хортиця Оригинальные Синяя",
+      "imageImg": "img/ХортицяB.png",
+      "resin": 8,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Хортиця Оригинальные Красная",
+      "imageImg": "img/ХортицяR.png",
+      "resin": 9,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Бiле Сонце Оригинальные",
+      "imageImg": "img/Бiле СонцеK.png",
+      "resin": 8,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Бiле Сонце Классические",
+      "imageImg": "img/Бiле СонцеO.png",
+      "resin": 9,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Dune Blue Label",
+      "imageImg": "img/DuneB.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Dune Red Label",
+      "imageImg": "img/DuneR.png",
+      "resin": 10,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "NTO",
+      "imageImg": "img/NTO.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "peppell"
+    },
+    {
+      "name": "Camel Желтый",
+      "imageImg": "img/Camel.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Camel Compact",
+      "imageImg": "img/CamelC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Camel Compact 100",
+      "imageImg": "img/Camel100.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Camel Compact Cool Crush",
+      "imageImg": "img/CamelCC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Camel Compact Ruby",
+      "imageImg": "img/CamelCR.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Camel Compact Special",
+      "imageImg": "img/CamelCS.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Camel Compact Cool Crush",
+      "imageImg": "img/CamelCC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Autograph Impulse Compact 100's Sunny",
+      "imageImg": "img/LDCS.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Autograph Impulse Compact 100's Fusion",
+      "imageImg": "img/LDCF.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Autograph Red",
+      "imageImg": "img/LDAR.png",
+      "resin": 9,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Autograph Blue",
+      "imageImg": "img/LDAB.png",
+      "resin": 7,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Impulse Compact Jungle",
+      "imageImg": "img/LDCJ.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Impulse Compact Play",
+      "imageImg": "img/LDCP.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Club Compact Impulse",
+      "imageImg": "img/LDCI.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Club Lounge Compact",
+      "imageImg": "img/LDLC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Compact 100",
+      "imageImg": "img/LDC100.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD Special Blend",
+      "imageImg": "img/LDSB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "LD ssl",
+      "imageImg": "img/LD ssl.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Play Blue-Ray",
+      "imageImg": "img/PBR.png",
+      "resin": 4,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Play Set Mix",
+      "imageImg": "img/PSM.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Play Top Mix",
+      "imageImg": "img/PTM.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Play Hit",
+      "imageImg": "img/PH.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Kiss Glam",
+      "imageImg": "img/WING.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Arctic",
+      "imageImg": "img/WINA.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Impulse",
+      "imageImg": "img/WINI.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Kiss Mirage",
+      "imageImg": "img/XSKISS.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Compact Blue",
+      "imageImg": "img/WINCB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Compact 100",
+      "imageImg": "img/WIN100.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Compact Frozen",
+      "imageImg": "img/WINCF.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Compact Electro",
+      "imageImg": "img/WINCE.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Silver",
+      "imageImg": "img/WINS.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston XS Blue",
+      "imageImg": "img/WINB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston Xstyle Dual",
+      "imageImg": "img/WINXD.png",
+      "resin": 6,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston Xstyle Silver",
+      "imageImg": "img/WINXS.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston Xstyle Blue",
+      "imageImg": "img/WINCB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston Compact Summer Mix",
+      "imageImg": "img/WINCSM.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston Classic",
+      "imageImg": "img/WINC.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston Silver",
+      "imageImg": "img/WINSI.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston Blue",
+      "imageImg": "img/WINBK.png",
+      "resin": 5,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston SS Menthol",
+      "imageImg": "img/WINSSM.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston SS Silver",
+      "imageImg": "img/WINSSS.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Winston SS Blue",
+      "imageImg": "img/WINSSB.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Русский Стиль Светлый",
+      "imageImg": "img/PC.png",
+      "resin": 9,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Русский Стиль Тёмный",
+      "imageImg": "img/PT.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Русский Стиль 100 Красный",
+      "imageImg": "img/PK.png",
+      "resin": 12,
+      "nicotine": 0.9,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Русский Стиль Донской Тёмный",
+      "imageImg": "img/PDT.png",
+      "resin": 8,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Русский Стиль Синий",
+      "imageImg": "img/PCB.png",
+      "resin": 6,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Русский Стиль Чёрный",
+      "imageImg": "img/PCX.png",
+      "resin": 9,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Русский Стиль Эталон Компакт",
+      "imageImg": "img/PCK.png",
+      "resin": 6,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Sobranie Colours",
+      "imageImg": "img/SOBC.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Sobranie Black Russian",
+      "imageImg": "img/SOBBR.png",
+      "resin": 9,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Sobranie Black",
+      "imageImg": "img/SOBB.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Sobranie Blacks",
+      "imageImg": "img/SOBBS.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Sobranie Element Amber",
+      "imageImg": "img/SOBEA.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Sobranie Element Ruby",
+      "imageImg": "img/SOBER.png",
+      "resin": 7,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Sobranie Element Sapphire",
+      "imageImg": "img/SOBES.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Sobranie Blue",
+      "imageImg": "img/SOB.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "jti"
+    },
+    {
+      "name": "Ararat Blue Nanokings",
+      "imageImg": "img/ARABN.png",
+      "resin": 2,
+      "nicotine": 0.2,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Ararat Silver Line",
+      "imageImg": "img/ARASL.png",
+      "resin": 8,
+      "nicotine": 0.8,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Ararat Blue Line",
+      "imageImg": "img/ARABL.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Ararat Exclusive",
+      "imageImg": "img/ARAE.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Ararat Exclusive Nanokings",
+      "imageImg": "img/ARAEN.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "MT Black compact",
+      "imageImg": "img/MTB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "MT Mint Slims",
+      "imageImg": "img/MTMS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "MT Blue compact",
+      "imageImg": "img/MTBC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "MT Pink Slim",
+      "imageImg": "img/MTP.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "GT Nero compact",
+      "imageImg": "img/GTNC.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "GT Black",
+      "imageImg": "img/GTB.png",
+      "resin": 9,
+      "nicotine": 0.9,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "GT Black Slims",
+      "imageImg": "img/GTBS.png",
+      "resin": 8,
+      "nicotine": 0.7,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Elegant White Slims",
+      "imageImg": "img/ELWS.png",
+      "resin": 8,
+      "nicotine": 0.9,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Elegant Dark Slims",
+      "imageImg": "img/ELDS.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Akhtamar Exclusive Black",
+      "imageImg": "img/AKEB.png",
+      "resin": 8,
+      "nicotine": 0.5,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Akhtamar Premium Slims",
+      "imageImg": "img/AKPS.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Akhtamar Silver Flame Nano",
+      "imageImg": "img/AKSFN.png",
+      "resin": 3,
+      "nicotine": 0.4,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Akhtamar Classic Slims",
+      "imageImg": "img/AKCS.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Akhtamar Classic",
+      "imageImg": "img/AKBFN.png",
+      "resin": 6,
+      "nicotine": 0.7,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Akhtamar Black Flame Nano",
+      "imageImg": "img/AKHB.png",
+      "resin": 3,
+      "nicotine": 0.4,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Akhtamar Classic 100",
+      "imageImg": "img/AKBFN.png",
+      "resin": 7,
+      "nicotine": 0.5,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Garni White Slims",
+      "imageImg": "img/GARW.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Garni Black  Slims",
+      "imageImg": "img/GARB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Black Tip Ultraslims",
+      "imageImg": "img/BTU.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Black Tip Black",
+      "imageImg": "img/BTB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Triumph КING SIZE BLACK",
+      "imageImg": "img/TRKSB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Triumph Blue Slims",
+      "imageImg": "img/TRBS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Triumph Black Slims",
+      "imageImg": "img/TRIBS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Noy White",
+      "imageImg": "img/NOY.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Vip Mentol Slims",
+      "imageImg": "img/VIPM.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Vip Blue Slims",
+      "imageImg": "img/VIPB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Vip Black Slims",
+      "imageImg": "img/VIPBS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Vip Exclusive Slims",
+      "imageImg": "img/VIPES.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Yerevan Slims",
+      "imageImg": "img/YS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Classic Gold Slims",
+      "imageImg": "img/CGS.png",
+      "resin": 8,
+      "nicotine": 0.7,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Classic Black Slims",
+      "imageImg": "img/SBS.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Classic Ultima Slims",
+      "imageImg": "img/SUS.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Armenia",
+      "brand": "gt"
+    },
+    {
+      "name": "Cigaronne Royal Slims XL Filter Phantom",
+      "imageImg": "img/CIGRSP.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne Royal Slims XL Filter Black",
+      "imageImg": "img/CIGRSB.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne Royal Slims XL Filter White",
+      "imageImg": "img/CIGRSW.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne Magnet",
+      "imageImg": "img/CIGM.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne KS Black",
+      "imageImg": "img/CIGB.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne Royal Menthol",
+      "imageImg": "img/CIGRM.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne SS Black",
+      "imageImg": "img/CIGB.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne KS White",
+      "imageImg": "img/CIGW.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne SS White",
+      "imageImg": "img/CIGW.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne Ultra Slim Black",
+      "imageImg": "img/CIGB.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "Cigaronne Ultra Slim White",
+      "imageImg": "img/CIGW.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Armenia",
+      "brand": "cigaronne"
+    },
+    {
+      "name": "LM Blue",
+      "imageImg": "img/LMB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "LM Red",
+      "imageImg": "img/LMR.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Parliament Voyage Mix",
+      "imageImg": "img/PVM.png",
+      "resin": 7,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Parliament Soho Aqua Blue",
+      "imageImg": "img/PSAB.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Parliament Super Slims",
+      "imageImg": "img/PSS.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Parliament Silver Blue",
+      "imageImg": "img/PSB.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Parliament Tropic Voyage",
+      "imageImg": "img/PTV.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Parliament Night Blue",
+      "imageImg": "img/PNB.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Parliament Aqua Blue",
+      "imageImg": "img/PAB.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Parliament Red Slims",
+      "imageImg": "img/PRS.png",
+      "resin": 6,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Parliament Platinum Blue",
+      "imageImg": "img/PPB.png",
+      "resin": 1,
+      "nicotine": 0.1,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Chesterfield Extra Brown",
+      "imageImg": "img/CHEB.png",
+      "resin": 10,
+      "nicotine": 0.9,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Chesterfield Remix Exotic",
+      "imageImg": "img/CHRE.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Chesterfield Blue",
+      "imageImg": "img/CHB.png",
+      "resin": 10,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Chesterfield Remix Blossom",
+      "imageImg": "img/CHRB.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Chesterfield Remix Premium",
+      "imageImg": "img/CHRP.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Chesterfield Original",
+      "imageImg": "img/CHO.png",
+      "resin": 12,
+      "nicotine": 0.9,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Chesterfield Remix Summer Compact",
+      "imageImg": "img/CHRSC.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Chesterfield Selection Compact",
+      "imageImg": "img/CHSC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Chesterfield Selection Plus",
+      "imageImg": "img/CHSP.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Next SS Rose Mix",
+      "imageImg": "img/NXRM.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Next SS Violet Dubliss",
+      "imageImg": "img/NXVD.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Next Violet Mix",
+      "imageImg": "img/NXVM.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Aroma Brown Blend",
+      "imageImg": "img/MABB.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Aroma Red Blend",
+      "imageImg": "img/MARB.png",
+      "resin": 5,
+      "nicotine": 0.9,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Summer Fusion",
+      "imageImg": "img/MSF.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Vista Garden Zing",
+      "imageImg": "img/MVGZ.png",
+      "resin": 7,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Crafted Compact",
+      "imageImg": "img/MCC.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Gold",
+      "imageImg": "img/MGo.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Double Mix",
+      "imageImg": "img/MDM.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Мальборо Виста Форест Мист",
+      "imageImg": "img/MBFM.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Red",
+      "imageImg": "img/MRe.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Crafted Blue",
+      "imageImg": "img/MCB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Marlboro Crafted Gold",
+      "imageImg": "img/MCG.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Compact Expert",
+      "imageImg": "img/PMCE.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Blue",
+      "imageImg": "img/PMB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Premium Mix",
+      "imageImg": "img/PMPM.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Compact Blue",
+      "imageImg": "img/PMCB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Red",
+      "imageImg": "img/PMR.png",
+      "resin": 10,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Breeze Mix",
+      "imageImg": "img/PMBM.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Expert Plus",
+      "imageImg": "img/PMEP.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Exotic Mix",
+      "imageImg": "img/PMEM.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Premium Mix",
+      "imageImg": "img/PMPMI.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Premium Mix",
+      "imageImg": "img/PMPRM.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Caribbean Mix",
+      "imageImg": "img/PMCM.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Philip Morris Siesta Mix",
+      "imageImg": "img/PMSM.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pmi"
+    },
+    {
+      "name": "Bohem Demi - Cavana",
+      "imageImg": "img/BONC.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Bohem Libre - Red",
+      "imageImg": "img/BONR.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Bohem Libre - Brown",
+      "imageImg": "img/BONB.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Bohem Cigar Mini - Original",
+      "imageImg": "img/BONEC.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Bohem Demi - Cavana Presso",
+      "imageImg": "img/BOHD.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Bohem Demi - Cavana Gold",
+      "imageImg": "img/BOHCG.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Bohem Superslim - Rich Brown",
+      "imageImg": "img/BOHRB.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Bohem Superslim - Aqua Blue",
+      "imageImg": "img/BOHCM.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Bohem Cigar Mini - Aroma",
+      "imageImg": "img/BOHAB.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Exchange Brown Super Slim",
+      "imageImg": "img/ESBSS.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Blue",
+      "imageImg": "img/ESB.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Exchange Summer Red",
+      "imageImg": "img/ESESR.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Classic",
+      "imageImg": "img/ESC.png",
+      "resin": 7,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Green",
+      "imageImg": "img/ESG.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Secret",
+      "imageImg": "img/ESS.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Exchange S",
+      "imageImg": "img/ESXS.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Field",
+      "imageImg": "img/ESF.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Sense Hymalaya",
+      "imageImg": "img/ESSH.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Presso",
+      "imageImg": "img/ESP.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Golden Leaf",
+      "imageImg": "img/ESGL.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Special Gold",
+      "imageImg": "img/ESSG.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Exchange",
+      "imageImg": "img/ESE.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse One",
+      "imageImg": "img/ESO.png",
+      "resin": 1,
+      "nicotine": 0.1,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Jec Super Slim",
+      "imageImg": "img/ESJS.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Sense Hymalaya Demi Compact",
+      "imageImg": "img/ESSH.png",
+      "resin": 7,
+      "nicotine": 0.4,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Summer Pop Demi Compact",
+      "imageImg": "img/ESSHDC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Black",
+      "imageImg": "img/ESBl.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Exchange M",
+      "imageImg": "img/ESEM.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Exchange W",
+      "imageImg": "img/ESEW.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Silver",
+      "imageImg": "img/ESSi.png",
+      "resin": 1,
+      "nicotine": 0.1,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Esse Menthol",
+      "imageImg": "img/ESM.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Raison Presso",
+      "imageImg": "img/RAIP.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "Raison French Black",
+      "imageImg": "img/RAIB.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Korea",
+      "brand": "kg"
+    },
+    {
+      "name": "BonBon Vine Super Slim",
+      "imageImg": "img/BOBV.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "BonBon Forest Super Slim",
+      "imageImg": "img/BOBSS.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Blooming Blue",
+      "imageImg": "img/BLB.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Blooming Silver",
+      "imageImg": "img/BLS.png",
+      "resin": 1,
+      "nicotine": 0.1,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Blooming - Gold",
+      "imageImg": "img/BLG.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Сигареты Blooming - Violet ON",
+      "imageImg": "img/BLBVON.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "kg"
+    },
+    {
+      "name": "Milano PARIS",
+      "imageImg": "img/MILP.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Superslim Blue",
+      "imageImg": "img/MILSB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano LONDON",
+      "imageImg": "img/MILL.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Superslim Silver",
+      "imageImg": "img/MILSS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano NEW YORK",
+      "imageImg": "img/MILNY.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Superslim Green",
+      "imageImg": "img/MILG.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Compact Vero",
+      "imageImg": "img/MILV.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Superslim Vento",
+      "imageImg": "img/MILSV.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Superslim Rosso",
+      "imageImg": "img/MILSR.png",
+      "resin": 1,
+      "nicotine": 0.1,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Superslim Bruno",
+      "imageImg": "img/MILSBr.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Nano Geneva",
+      "imageImg": "img/MILGe.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Nano Aria",
+      "imageImg": "img/MILA.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Compact Skyline",
+      "imageImg": "img/MILCS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Compact Rosso",
+      "imageImg": "img/MILCR.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Compact Night Blinks",
+      "imageImg": "img/MILNB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Las Vegas Night Version",
+      "imageImg": "img/MILVNV.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Las Vegas Day Version",
+      "imageImg": "img/MILVDV.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Milano Skyline",
+      "imageImg": "img/MILCS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Cavallo Twin Ball",
+      "imageImg": "img/CAVA.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "gti"
+    },
+    {
+      "name": "Chapman Blue",
+      "imageImg": "img/CHAB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Autumn Edition",
+      "imageImg": "img/CHAAE.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Nano Green",
+      "imageImg": "img/CHANG.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman SS Purple",
+      "imageImg": "img/CHASSP.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman SS Red",
+      "imageImg": "img/CHASSR.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman SS Classic",
+      "imageImg": "img/CHASSC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Nano Braun",
+      "imageImg": "img/CHANB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Classic",
+      "imageImg": "img/CHAC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman SS Green",
+      "imageImg": "img/CHASSG.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Compact Braun",
+      "imageImg": "img/CHACB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Green",
+      "imageImg": "img/CHASSG.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Compact Classic",
+      "imageImg": "img/CHACS.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Nano Red",
+      "imageImg": "img/CHANR.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Braun",
+      "imageImg": "img/CHABr.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Compact Red",
+      "imageImg": "img/CHACR.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman SS Gold",
+      "imageImg": "img/CHAPSSG.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman SS Roze",
+      "imageImg": "img/Chapman SS Roze.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Purple",
+      "imageImg": "img/CHASSRo.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Gold",
+      "imageImg": "img/CHAPSSG.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Red",
+      "imageImg": "img/CHASSR.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman SS Braun",
+      "imageImg": "img/CHANB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Chapman Indigo",
+      "imageImg": "img/CHAI.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Pepe Fine Green",
+      "imageImg": "img/PEPEFG.png",
+      "resin": 3,
+      "nicotine": 0.3,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Pepe Rich Green",
+      "imageImg": "img/PEPERG.png",
+      "resin": 8,
+      "nicotine": 0.7,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Pepe Dark Green",
+      "imageImg": "img/PEPEDG.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Pepe Easy Green",
+      "imageImg": "img/PEPEEG.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Harvest Original",
+      "imageImg": "img/HO.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Harvest Braun",
+      "imageImg": "img/HB.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Harvest Gold",
+      "imageImg": "img/HG.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Harvest Red",
+      "imageImg": "img/HR.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Harvest White",
+      "imageImg": "img/HW.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Sioux Red",
+      "imageImg": "img/SR.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Burton Blue",
+      "imageImg": "img/BUR.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Germany",
+      "brand": "VonEiken"
+    },
+    {
+      "name": "Captain Jack - Original",
+      "imageImg": "img/CJO.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Captain Jack - Ruby",
+      "imageImg": "img/CJR.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Manchester Gold",
+      "imageImg": "img/MG.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Manchester Red Compact",
+      "imageImg": "img/MRC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Manchester Silver",
+      "imageImg": "img/MS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Manchester Blue Compact",
+      "imageImg": "img/MBC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Manchester Purple Compact",
+      "imageImg": "img/MPC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Manchester Red",
+      "imageImg": "img/MR.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Manchester Red Storm Super Slims",
+      "imageImg": "img/MRSSS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Manchester Saphire Dust Super Slims",
+      "imageImg": "img/MSDSS.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Davidoff Reach Purple",
+      "imageImg": "img/DAVRP.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Davidoff Reach Red",
+      "imageImg": "img/DAVRR.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Davidoff Reach Blue",
+      "imageImg": "img/DAVRB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Davidoff Slims Gold",
+      "imageImg": "img/DAVSG.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Davidoff Gold",
+      "imageImg": "img/DAVG.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Davidoff Reach Focus White",
+      "imageImg": "img/DAVRFW.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Davidoff Reach Focus Black",
+      "imageImg": "img/DAVRFB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Parker & Simpson Red 100",
+      "imageImg": "img/P&SR100.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Parker & Simpson Compact Blue",
+      "imageImg": "img/P&SCB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Parker & Simpson Blue",
+      "imageImg": "img/P&SSB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Parker & Simpson Red",
+      "imageImg": "img/P&SR.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Parker & Simpson Compact Silver",
+      "imageImg": "img/P&SCS.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Parker & Simpson - Compact Red",
+      "imageImg": "img/P&SCR.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Parker & Simpson - Compact Purple",
+      "imageImg": "img/P&SCP.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Parker & Simpson Gold 100's",
+      "imageImg": "img/P&SG100.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Jade Rose",
+      "imageImg": "img/JR.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Jade La Blue",
+      "imageImg": "img/JB.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Jade Les Clipse",
+      "imageImg": "img/JL.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Jade La Rouge",
+      "imageImg": "img/JLR.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "West Purple Up",
+      "imageImg": "img/WPU.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "West Blue Up Compact",
+      "imageImg": "img/WBUC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "West Red Up",
+      "imageImg": "img/WRU.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "itg"
+    },
+    {
+      "name": "Mackintosh",
+      "imageImg": "img/Mackintosh.png",
+      "resin": 8,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Montana Heritage",
+      "imageImg": "img/Montana Heritage.png",
+      "resin": 10,
+      "nicotine": 1,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Cherokee Nicaragua Blend",
+      "imageImg": "img/CHNB.png",
+      "resin": 9,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Cherokee Dominicana Blend",
+      "imageImg": "img/CHNB.png",
+      "resin": 9,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Corsar Gold",
+      "imageImg": "img/CORG.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Corsar Original",
+      "imageImg": "img/CORO.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Corsar Cappuccino",
+      "imageImg": "img/CORC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Corsar Vanilla",
+      "imageImg": "img/CORV.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Corsar Cherry",
+      "imageImg": "img/CORCH.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Barclay Original",
+      "imageImg": "img/BO.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Barclay Irish Coffe",
+      "imageImg": "img/BIC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Barclay Grape",
+      "imageImg": "img/BG.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Barclay Cherry",
+      "imageImg": "img/BC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Marco Polo Cappuccino",
+      "imageImg": "img/MRPC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Marco Polo Grape",
+      "imageImg": "img/MRPY.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Marco Polo Vanilla",
+      "imageImg": "img/MRPB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Marco Polo Cherry",
+      "imageImg": "img/MAPBA.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Marco Polo Classic",
+      "imageImg": "img/MAPCL.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Apsny - Темный",
+      "imageImg": "img/APT.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Apsny Classic",
+      "imageImg": "img/APC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Apsny - Светлый",
+      "imageImg": "img/APSC.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Vertu - Superslim Diamond",
+      "imageImg": "img/VERS.png",
+      "resin": 5,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Vertu - Superslim Black Diamond",
+      "imageImg": "img/VERSBD.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Vertu - King Size Diamond",
+      "imageImg": "img/VERS.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Vertu - King Size Black Diamond",
+      "imageImg": "img/VERSBD.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Richland King Size Aroma Red",
+      "imageImg": "img/RICAR.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Richland King Size Aroma Violet",
+      "imageImg": "img/RICAV.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Richland King Size Aroma Brown",
+      "imageImg": "img/RICAR.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Richland Aroma Violet",
+      "imageImg": "img/RICAB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Richland Aroma Red",
+      "imageImg": "img/RICHAR.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Richland SuperSlims Aroma Red",
+      "imageImg": "img/RICSAR.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+    {
+      "name": "Gold Mill Red",
+      "imageImg": "img/Gold Mill Red.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "pccf"
+    },
+
+    {
+      "name": "Lucky Strike Red",
+      "imageImg": "img/LSR.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Compact Blue",
+      "imageImg": "img/LSCB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Yellow",
+      "imageImg": "img/LSY.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Brown",
+      "imageImg": "img/LSB.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Compact Purple",
+      "imageImg": "img/LSCP.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Bright Green",
+      "imageImg": "img/LSBG.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Surf",
+      "imageImg": "img/LSS.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Premium Blue",
+      "imageImg": "img/LSPB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Original",
+      "imageImg": "img/LSO.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Compact Bright",
+      "imageImg": "img/LSCBr.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Greenred",
+      "imageImg": "img/LSG.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Green",
+      "imageImg": "img/LSGr.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike Blast",
+      "imageImg": "img/LSBl.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike XL Blue",
+      "imageImg": "img/LSXLB.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Lucky Strike XL Purple",
+      "imageImg": "img/LSXLP.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Nano White",
+      "imageImg": "img/KNW.png",
+      "resin": 1,
+      "nicotine": 0.1,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Nano Mix",
+      "imageImg": "img/KNM.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Core White 1",
+      "imageImg": "img/KCW1.png",
+      "resin": 1,
+      "nicotine": 0.1,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Switch",
+      "imageImg": "img/KS.png",
+      "resin": 4,
+      "nicotine": 0.3,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Crystal",
+      "imageImg": "img/KC.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Core Silver 4",
+      "imageImg": "img/KCS4.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Crystal Mix Plus",
+      "imageImg": "img/KCMP.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Crystal Mix Green",
+      "imageImg": "img/KCMG.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Core Blue 8",
+      "imageImg": "img/KCB8.png",
+      "resin": 8,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Crystal Mix",
+      "imageImg": "img/KCM.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Nano Silver",
+      "imageImg": "img/KNS.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Кристалл Брайт",
+      "imageImg": "img/KKB.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Мята",
+      "imageImg": "img/KM.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Кристалл Блю",
+      "imageImg": "img/KKBL.png",
+      "resin": 5,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Aroma Red",
+      "imageImg": "img/KAR.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Kent Вишня",
+      "imageImg": "img/KB.png",
+      "resin": 5,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Dunhill Fine Cut Master Blend",
+      "imageImg": "img/DFCMB.png",
+      "resin": 7,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Dunhill Fine Cut Master Blend Blue",
+      "imageImg": "img/DUFCMB.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Dunhill Fine Cut Swiss Blend",
+      "imageImg": "img/DFCSB.png",
+      "resin": 10,
+      "nicotine": 0.9,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Dunhill Aroma Red",
+      "imageImg": "img/DAR.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Dunhill Aroma Brown",
+      "imageImg": "img/DAB.png",
+      "resin": 0,
+      "nicotine": 0,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Dunhill Swiss Blend Purple",
+      "imageImg": "img/DSBP.png",
+      "resin": 10,
+      "nicotine": 0.9,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Dunhill Swiss Blend Aroma Red",
+      "imageImg": "img/DSBAR.png",
+      "resin": 10,
+      "nicotine": 0.9,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Dunhill Swiss Blend",
+      "imageImg": "img/DSB.png",
+      "resin": 10,
+      "nicotine": 0.9,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Dunhill Master Blend Blue",
+      "imageImg": "img/DFCMB.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Ява 100 Золотая Классическая (Спутник)",
+      "imageImg": "img/Я100.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Ява Золотая Оригинальная",
+      "imageImg": "img/ЯЗО.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Ява Белое Золото Оригинальная",
+      "imageImg": "img/ЯБЗО.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Ява 100 Золотая Классическая",
+      "imageImg": "img/Я100К.png",
+      "resin": 10,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Ява Золотая Классическая",
+      "imageImg": "img/ЯЗК.png",
+      "resin": 10,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Ява 100 Белое Золото Класическая",
+      "imageImg": "img/ЯБЗК100.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Ява Белое Золото Классическая",
+      "imageImg": "img/ЯБЗК.png",
+      "resin": 10,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Vogue Menthol",
+      "imageImg": "img/VM.png",
+      "resin": 7,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Vogue Lilas",
+      "imageImg": "img/VLC.png",
+      "resin": 3,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Vogue Unique Click",
+      "imageImg": "img/VUC.png",
+      "resin": 7,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Vogue Blue",
+      "imageImg": "img/VB.png",
+      "resin": 7,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Vogue Menthol Moments",
+      "imageImg": "img/VMM.png",
+      "resin": 7,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Vogue Mix Moments",
+      "imageImg": "img/VMIM.png",
+      "resin": 7,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Vogue Classic Moments",
+      "imageImg": "img/VCM.png",
+      "resin": 7,
+      "nicotine": 0.7,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Royals Violet",
+      "imageImg": "img/RRV.png",
+      "resin": 7,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Royals Nano Click",
+      "imageImg": "img/RRNC.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Royals Green",
+      "imageImg": "img/RRG.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Royals Volt",
+      "imageImg": "img/RRVO.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Demi Silver",
+      "imageImg": "img/RDS.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Demi Mellow",
+      "imageImg": "img/RDM.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Demi Click",
+      "imageImg": "img/RDC.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Demi",
+      "imageImg": "img/RDS.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Superslims Click",
+      "imageImg": "img/RSC.png",
+      "resin": 4,
+      "nicotine": 0.4,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Royals Nano",
+      "imageImg": "img/RRN.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Royals Demi Classic",
+      "imageImg": "img/RRDC.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Royals Demi",
+      "imageImg": "img/RRD.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Royals Blue",
+      "imageImg": "img/RRB.png",
+      "resin": 8,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Royals Red",
+      "imageImg": "img/RRR.png",
+      "resin": 9,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Max Blue",
+      "imageImg": "img/RMB.png",
+      "resin": 6,
+      "nicotine": 0.6,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Aroma Red",
+      "imageImg": "img/RAR.png",
+      "resin": 12,
+      "nicotine": 0.8,
+      "country": "Russia",
+      "brand": "bat"
+    },
+    {
+      "name": "Rothmans Aroma Brown Compact 100s",
+      "imageImg": "img/RABC100.png",
+      "resin": 6,
+      "nicotine": 0.5,
+      "country": "Russia",
+      "brand": "bat"
+    }
+  ],
+  "tobacco": [
+    {
+      "name": "Cherokee",
+      "imageImg": "img/cherokee.png",
+      "description": "Табак для самокруток от погарской фабрики, в ассортименте",
+      "type": "rolling"
+    },
+    {
+      "name": "Corsar",
+      "imageImg": "img/corsar.png",
+      "description": "Табак для самокруток от погарской фабрики, в ассортименте",
+      "type": "rolling"
+    },
+    {
+      "name": "Табак трубочный из погара (номерной)",
+      "imageImg": "img/Тобак трубочный из погара (номерной).png",
+      "description": "табак для трубок от погарской фабрики, в ассортименте",
+      "type": "pipe"
+    },
+    {
+      "name": "Bristol",
+      "imageImg": "img/bristol.png",
+      "description": "Табак для трубок от погарской фабрики, в ассортименте",
+      "type": "pipe"
+    },
+    {
+      "name": "Darkside (shot,core)",
+      "imageImg": "img/darkside (shot,core).png",
+      "description": "Табак для кальяна в ассортименте",
+      "type": "hookah"
+    },
+    {
+      "name": "Milano",
+      "imageImg": "img/milano.jpg",
+      "description": "Жевательный табак в ассортименте",
+      "type": "chewing "
+    },
+    {
+      "name": "Siberia",
+      "imageImg": "img/siberia.png",
+      "description": "Жевательный табак в ассортименте",
+      "type": "chewing "
+    },
+    {
+      "name": "Odens",
+      "imageImg": "img/odens.jpg",
+      "description": "Жевательный табак в ассортименте",
+      "type": "chewing "
+    }
+  ],
+  "drinks": [
+    {
+      "name": "Вода",
+      "imageImg": "img/water.jpg",
+      "description": " Вода святой источник, bon aqua, borjomi, aqua minerale в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Газировка и лимонады",
+      "imageImg": "img/лимонад.jpg",
+      "description": " Натахтари, добрый, fresh bar, evervess в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Импортная газировка",
+      "imageImg": "img/ufp.jpg",
+      "description": " Coca Cola, Fanta, Dr. Pepper, Pepsi, Schweppes в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Энергетические напитки tornado",
+      "imageImg": "img/tornado.png",
+      "description": "Tornado, в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Энергетические напитки adrenaline",
+      "imageImg": "img/adrenaline.jpg",
+      "description": "Adrenaline, в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Энергетические напитки gorilla",
+      "imageImg": "img/gorilla.jpg",
+      "description": "Gorilla, в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Энергетические напитки drive",
+      "imageImg": "img/drive.jpg",
+      "description": "Drive, в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Энергетические напитки eon",
+      "imageImg": "img/eon.jpg",
+      "description": "E-on, в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Энергетические напитки red bull",
+      "imageImg": "img/red bull.jpg",
+      "description": "Red bull, в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Энергетические напитки flash",
+      "imageImg": "img/flash.png",
+      "description": "Flash, в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Энергетические напитки burn",
+      "imageImg": "img/burn.png",
+      "description": "Burn, в ассортименте",
+      "type": ""
+    }
+  ],
+  "other": [
+    {
+      "name": "ЭПИ (Одноразки)",
+      "imageImg": "img/Mint_package.jpg",
+      "description": "Одноразвоые электронные сигареты брендов Plonq, Waka, Mk Miking, Iforce, CNPT в ассортименте",
+      "type": ""
+    },
+    {
+      "name": "Все для зажигалок",
+      "imageImg": "img/zipppo.jpg",
+      "description": "Газ, топливо(бензин) и кремний для зажигалок брендов zippo, clipper и др., в ассортименте",
+      "type": ""
+    },
+
+    {
+      "name": "Все для самокруток",
+      "imageImg": "img/самокрутки.webp",
+      "description": "Машинки, бумага, гильзы и фильтры для самоткруток",
+      "type": ""
+    },
+    {
+      "name": "Все для кальяна",
+      "imageImg": "img/уголь, чаши и фольга для кальяна.jpg",
+      "description": "Уголь, чаши и фольга для кальяна",
+      "type": ""
+    },
+    {
+      "name": "Кальяны",
+      "imageImg": "img/кальяны.jpg",
+      "description": "Кальяны в ассортименте",
+      "type": ""
+    }
+  ]
+}

@@ -2,7 +2,7 @@ function Form() {
   return (
     <div className=" mt-[80px] xl:mt-[100px]  relative z-20  xl:flex justify-center ">
       <div
-        className="relative xl:w-[1110px] lg:h-[400px] bg-[#191d21] rounded-[20px] overflow-hidden
+        className="relative xl:w-[1110px]  bg-[#191d21] rounded-[20px] overflow-hidden
      before:transform before:skew-y-[345deg] before:transition-[0.5s]
      card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg] p-6
     "
@@ -13,7 +13,7 @@ function Form() {
         </p>
 
         <div>
-          <form className="lg:flex md:flex-wrap md:justify-center pt-10 items-center ">
+          {/* <form className="lg:flex md:flex-wrap md:justify-center pt-10 items-center ">
             <div className="mb-6">
               <label className="text-white p-4" htmlFor="name">
                 Имя
@@ -55,14 +55,29 @@ function Form() {
             >
               Отправить сообщение
             </button>
-          </form>
+          </form> */}
         </div>
-        <hr></hr>
-        <div className="md:flex justify-center gap-[150px] pt-7 text-white h3">
-          <a className="" href="tel:+79044903470">+7 (904) 490 34 70</a>
-          <div>
-          <a href="mailto:tabakbazar@mail.ru">tabakbazar@mail.ru</a>
-          </div>
+        <hr className="mt-3"></hr>
+        <div className="flex justify-around pt-7 text-white h3 flex-wrap ">
+          <a href="tel:+71112223344">
+            <div className=" flex flex-wrap items-center flex-col p-4 m-2 border-[1px] border-[#494949] rounded-xl ">
+              <p className="select-none ">Тел. рынок "Центральный"</p>
+              <p>+7 (999) 123 45 67</p>
+            </div>
+          </a>
+          <a href="tel:+71112223344">
+            <div className=" flex flex-wrap items-center flex-col p-4 m-2 border-[1px] border-[#494949] rounded-xl ">
+              <p className="select-none ">Тел. рынок "Михайловский"</p>
+              <p>+7 (999) 123 45 67</p>
+            </div>
+          </a>
+
+          <a href="mailto:tabakbazar@mail.ru">
+            <div className=" flex flex-wrap items-center flex-col p-4 m-2 border-[1px] border-[#494949] rounded-xl ">
+              <p className="select-none ">Почта для связи:</p>
+              <p>tabakbazar@mail.ru</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>

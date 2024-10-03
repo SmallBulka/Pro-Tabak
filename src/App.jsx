@@ -35,7 +35,6 @@ function App() {
     companyDescription.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  
   return (
     <>
       {!checkAge ? <Popup clickConfirmAge={clickConfirmAge} /> : ""}
@@ -94,7 +93,7 @@ function App() {
                   />
                 </div>
               </div>
-              
+
               <div className="flex xl:w-1/3 flex-wrap">
                 <div className="w-full p-[20px] md:p-p-10">
                   <Catalog
@@ -115,8 +114,8 @@ function App() {
               </div>
             </div>
           </div>
-          <Accordion/>
-          
+          <Accordion />
+
           <div
             ref={companyDescription}
             className="steps mt-[80px] xl:mt-[60px] relative z-20"

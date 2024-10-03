@@ -10,7 +10,7 @@ function Hero({ scrollToCatalog, scrollToMiniMap }) {
           className="text-white w-[567px] flex flex-col items-center text-center
                 xl:text-left lg:items-start"
         >
-          <h1 className="text-[40px] md:text-[64px]  leading-none mb-8">
+          <h1 className="text-[40px] md:text-[64px]  leading-none mb-8 select-none">
             Изысканность и качество в каждой затяжке
           </h1>
           <p className="mb-8">придумай сюда текст</p>

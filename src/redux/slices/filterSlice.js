@@ -4,6 +4,7 @@ const initialState = {
   searchValue: "",
   country: "",
   brand: "",
+  catalog: "cigarettes",
 };
 
 export const filterSlice = createSlice({
@@ -19,10 +20,14 @@ export const filterSlice = createSlice({
     setBrand: (state, action) => {
       state.brand = action.payload;
     },
+    setCatalog: (state, action) => {
+      state.catalog = action.payload;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setSearchValue, setCountry, setBrand } = filterSlice.actions;
+export const { setSearchValue, setCountry, setBrand, setCatalog } =
+  filterSlice.actions;
 
 export default filterSlice.reducer;

@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cigarettes from "./slices/cigarettesSlice";
+import items from "./slices/itemsSlice";
 import filter from "./slices/filterSlice";
 import paginationSlice from "./slices/paginationSlice";
 export const store = configureStore({
-  reducer: { cigarettes, filter, paginationSlice },
+  reducer: { items, filter, paginationSlice },
 });

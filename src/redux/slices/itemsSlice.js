@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import cigarettesJSON from "../../assets/cigarettes.json";
-// export const fetchCigarettes = createAsyncThunk(
-//   "users/fetchCigarettesStatus",
+import itemsJSON from "../../assets/db.json";
+// export const fetchitems = createAsyncThunk(
+//   "users/fetchitemsStatus",
 //   async (params, thunkAPI) => {
 //     const {
 //       sortProperty,
@@ -30,12 +30,12 @@ import cigarettesJSON from "../../assets/cigarettes.json";
 // );
 
 const initialState = {
-  items: cigarettesJSON,
+  items: itemsJSON,
   status: "loading",
 };
 
-export const cigarettesSlice = createSlice({
-  name: "cigarettes",
+export const itemsSlice = createSlice({
+  name: "items",
   initialState,
   reducers: {
     setItems: (state, action) => {
@@ -44,15 +44,15 @@ export const cigarettesSlice = createSlice({
   },
   //   extraReducers: (builder) => {
   //     // Add reducers for additional action types here, and handle loading state as needed
-  //     builder.addCase(fetchCigarettes.pending, (state, action) => {
+  //     builder.addCase(fetchitems.pending, (state, action) => {
   //       state.status = "loading";
   //       state.items = [...new Array(10)];
   //     });
-  //     builder.addCase(fetchCigarettes.fulfilled, (state, action) => {
+  //     builder.addCase(fetchitems.fulfilled, (state, action) => {
   //       state.items = action.payload;
   //       state.status = "success";
   //     });
-  //     builder.addCase(fetchCigarettes.rejected, (state, action) => {
+  //     builder.addCase(fetchitems.rejected, (state, action) => {
   //       state.status = "error";
   //       state.items = [];
   //     });
@@ -60,6 +60,6 @@ export const cigarettesSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { setItems } = cigarettesSlice.actions;
+export const { setItems } = itemsSlice.actions;
 
-export default cigarettesSlice.reducer;
+export default itemsSlice.reducer;
