@@ -61,13 +61,13 @@ function Form() {
         <div className="flex justify-around pt-7 text-white h3 flex-wrap ">
           <a href="tel:+71112223344">
             <div className=" flex flex-wrap items-center flex-col p-4 m-2 border-[1px] border-[#494949] rounded-xl ">
-              <p className="select-none ">Тел. рынок "Центральный"</p>
+              <p className="select-none text-center">Тел. рынок "Центральный"</p>
               <p>+7 (999) 123 45 67</p>
             </div>
           </a>
           <a href="tel:+71112223344">
             <div className=" flex flex-wrap items-center flex-col p-4 m-2 border-[1px] border-[#494949] rounded-xl ">
-              <p className="select-none ">Тел. рынок "Михайловский"</p>
+              <p className="select-none text-center">Тел. рынок "Михайловский"</p>
               <p>+7 (999) 123 45 67</p>
             </div>
           </a>
@@ -75,7 +75,7 @@ function Form() {
           <a href="mailto:tabakbazar@mail.ru">
             <div className=" flex flex-wrap items-center flex-col p-4 m-2 border-[1px] border-[#494949] rounded-xl ">
               <p className="select-none ">Почта для связи:</p>
-              <p>tabakbazar@mail.ru</p>
+              <p className="font-raleway">tabakbazar@mail.ru</p>
             </div>
           </a>
         </div>

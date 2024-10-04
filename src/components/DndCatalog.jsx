@@ -80,7 +80,7 @@ const Accordion = () => {
           {/* группировка товаров */}
           <div className="flex w-full justify-start flex-wrap pb-2">
             <div className="flex justify-end pr-6 pb-2">
-              <div className="relative  sm:w-[260px] w-[300px] ">
+              <div className="relative  sm:w-[200px] w-[300px] ">
                 <TESelect
                   visibleOptions={4}
                   data={catalogArray}

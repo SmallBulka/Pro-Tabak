@@ -14,9 +14,9 @@ function Footer() {
                 Pro_Табак
               </div>
             </a>
-            <p className="mb-8 text-xl text-[#fffa]">
+            {/* <p className="mb-8 text-xl text-[#fffa]">
               Дима придумай сюда текст
-            </p>
+            </p> */}
             <ul className="text-pretty flex gap-[54px] justify-center xl:justify-start">
               <li className="flex gap-3 items-center">
                 <a href="tel:+79044903470">

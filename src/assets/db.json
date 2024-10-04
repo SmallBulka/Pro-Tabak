@@ -3225,7 +3225,7 @@
     },
     {
       "name": "Энергетические напитки tornado",
-      "imageImg": "img/tornado.png",
+      "imageImg": "img/tornado.jpg",
       "description": "Tornado, в ассортименте",
       "type": ""
     },
@@ -3237,7 +3237,7 @@
     },
     {
       "name": "Энергетические напитки gorilla",
-      "imageImg": "img/gorilla.jpg",
+      "imageImg": "img/gorilla.webp",
       "description": "Gorilla, в ассортименте",
       "type": ""
     },
@@ -3255,7 +3255,7 @@
     },
     {
       "name": "Энергетические напитки red bull",
-      "imageImg": "img/red bull.jpg",
+      "imageImg": "img/redbull.jpg",
       "description": "Red bull, в ассортименте",
       "type": ""
     },
@@ -3267,7 +3267,7 @@
     },
     {
       "name": "Энергетические напитки burn",
-      "imageImg": "img/burn.png",
+      "imageImg": "img/burn.webp",
       "description": "Burn, в ассортименте",
       "type": ""
     }

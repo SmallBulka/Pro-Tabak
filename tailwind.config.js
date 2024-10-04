@@ -27,7 +27,8 @@ export default {
         heroGradient: "rgba(45, 52, 60, 0.38)",
       },
       backgroundImage: {
-        hero: "url('/img/Gag.jpg')",
+        hero: "url('/img/Gag.png')",
+        ovo: "url('/img/ovo.webp')",
       },
     },
   },
