@@ -72,7 +72,7 @@ const Accordion = () => {
   return (
     <div className="flex justify-center">
       <div
-        className="relative w-[1250px] h-fit   bg-[#191d21] rounded-[20px] 
+        className="relative sm:w-[1250px] h-fit w-[320px]  bg-[#191d21] rounded-[20px] 
      before:transform before:skew-y-[345deg] before:transition-[0.5s]
      card hover:before:top-[-70%] hover:before:transform hover:before:skew-y-[390deg] p-6 "
       >
@@ -80,7 +80,7 @@ const Accordion = () => {
           {/* группировка товаров */}
           <div className="flex w-full justify-start flex-wrap pb-2">
             <div className="flex justify-end pr-6 pb-2">
-              <div className="relative  sm:w-[200px] w-[300px] ">
+              <div className="relative  sm:w-[200px] w-[250px] ">
                 <TESelect
                   visibleOptions={4}
                   data={catalogArray}
@@ -93,7 +93,7 @@ const Accordion = () => {
               </div>
             </div>
             <div className="flex ">
-              <div className="relative  sm:w-[200px] w-[300px]  sm:pr-6 pb-2">
+              <div className="relative  sm:w-[200px] w-[250px]  sm:pr-6 pb-2">
                 {catalog === "cigarettes" && (
                   <TESelect
                     data={countryArray}
@@ -107,7 +107,7 @@ const Accordion = () => {
               </div>
             </div>
             <div className="flex justify-end pr-6 pb-2">
-              <div className="relative  sm:w-[380px] w-[300px] ">
+              <div className="relative  sm:w-[380px] w-[250px] ">
                 {catalog === "cigarettes" && (
                   <TESelect
                     visibleOptions={8}
@@ -130,7 +130,7 @@ const Accordion = () => {
                     value={localSearchValue}
                     onChange={(event) => onChangeInput(event)}
                     type="search"
-                    className="relative xl:w-50 w-[240px] m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:focus:text-neutral-100 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                    className="relative xl:w-50 w-[204px] m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:focus:text-neutral-100 dark:placeholder:text-neutral-200 dark:focus:border-primary"
                     placeholder="Поиск"
                     aria-label="Search"
                     aria-describedby="button-addon2"

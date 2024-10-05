@@ -1,16 +1,16 @@
 // eslint-disable-next-line react/prop-types
 function Card({ name, resin, nicotine, imageImg, description }) {
   return (
-    <div className="flex flex-col pt-2 rounded-lg bg-white w-[150px] h-full sm:w-[200px] ] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+    <div className="flex flex-col pt-2 rounded-lg bg-white w-[120px] h-full sm:w-[200px] ] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
       <div className="h-[150px] flex justify-center items-center">
         <img
-          className="imgGradient w-[130px] h-[110px] md:w-[150px] md:h-[140px]"
+          className="imgGradient w-[100px] h-[90px] md:w-[150px] md:h-[140px]"
           src={imageImg}
           alt=""
         />
       </div>
       <div className="p-4  ">
-        <h5 className="sm:mb-2 text-sm sm:text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50 ">
+        <h5 className="sm:mb-2 text-sm sm:text-xl break-words font-medium leading-tight text-neutral-800 dark:text-neutral-50 ">
           {name}
         </h5>
         {resin & (resin !== 0) ? (
