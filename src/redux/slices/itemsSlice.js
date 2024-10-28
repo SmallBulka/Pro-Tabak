@@ -1,5 +1,21 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import itemsJSON from "../../assets/db.json";
+import axios from "../../axios";
+
+export const fetchProduct = createAsyncThunk(
+  "product/fetchProduct",
+  async (type) => {
+    const { data } = await axios.get("/product/" + type);
+
+    return data;
+  }
+);
+export const fetchRemoveProduct = createAsyncThunk(
+  "products/fetchRemoveProduct",
+  async (type, id) => {
+    await axios.delete(`/product/${type}/${id}`);
+  }
+);
 // export const fetchitems = createAsyncThunk(
 //   "users/fetchitemsStatus",
 //   async (params, thunkAPI) => {
@@ -30,6 +46,7 @@ import itemsJSON from "../../assets/db.json";
 // );
 
 const initialState = {
+  product: [],
   items: itemsJSON,
   status: "loading",
 };
@@ -42,21 +59,28 @@ export const itemsSlice = createSlice({
       state.items = action.payload;
     },
   },
-  //   extraReducers: (builder) => {
-  //     // Add reducers for additional action types here, and handle loading state as needed
-  //     builder.addCase(fetchitems.pending, (state, action) => {
-  //       state.status = "loading";
-  //       state.items = [...new Array(10)];
-  //     });
-  //     builder.addCase(fetchitems.fulfilled, (state, action) => {
-  //       state.items = action.payload;
-  //       state.status = "success";
-  //     });
-  //     builder.addCase(fetchitems.rejected, (state, action) => {
-  //       state.status = "error";
-  //       state.items = [];
-  //     });
-  //   },
+
+  extraReducers: (builder) => {
+    //получение статей
+    builder.addCase(fetchProduct.pending, (state) => {
+      state.status = "loading";
+    });
+    builder.addCase(fetchProduct.fulfilled, (state, action) => {
+      state.product = action.payload;
+      state.status = "loaded";
+    });
+    builder.addCase(fetchProduct.rejected, (state) => {
+      state.status = "error";
+      state.product = [];
+    });
+    //удаление статьи
+    builder.addCase(fetchRemoveProduct.pending, (state, action) => {
+      console.log(action.meta.arg);
+      state.product = state.product.filter(
+        (obj) => obj._id !== action.meta.arg
+      );
+    });
+  },
 });
 
 // Action creators are generated for each case reducer function

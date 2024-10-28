@@ -16,12 +16,14 @@ import {
 } from "../redux/slices/filterSlice";
 import Pagination from "./Pagination";
 import { setCurrentPage, setItemsWidth } from "../redux/slices/paginationSlice";
+import { fetchProduct } from "../redux/slices/itemsSlice";
 
 const Accordion = () => {
   const dispatch = useDispatch();
   const inputRef = useRef(null);
   const itemsRef = useRef(null);
-  const { items } = useSelector((state) => state.items);
+  const { product, status } = useSelector((state) => state.items);
+
   const { brand, country, searchValue, catalog } = useSelector(
     (state) => state.filter
   );
@@ -32,6 +34,9 @@ const Accordion = () => {
   useEffect(() => {
     dispatch(setItemsWidth(itemsRef.current.offsetWidth));
   }, []);
+  useEffect(() => {
+    dispatch(fetchProduct(catalog));
+  }, [catalog]);
   const updateSearchValue = useCallback(
     debounce((str) => {
       dispatch(setSearchValue(str));
@@ -163,13 +168,13 @@ const Accordion = () => {
 
           {/* блок с товарами */}
 
-          {catalog === "cigarettes" ? (
+          {catalog === "cigarettes" && status === "loaded" ? (
             <>
               <div
                 className="   grid-cols-2  grid md:grid-cols-[repeat(auto-fill,_215px)] gap-4 pb-1 "
                 ref={itemsRef}
               >
-                {items[catalog]
+                {product
                   .filter(
                     (obj) =>
                       (country === obj.country || country === "") &
@@ -188,16 +193,27 @@ const Accordion = () => {
               <Pagination />
             </>
           ) : (
+            <div
+              className="   grid-cols-2  grid md:grid-cols-[repeat(auto-fill,_215px)] gap-4 pb-1 "
+              ref={itemsRef}
+            ></div>
+          )}
+          {catalog !== "cigarettes" && status === "loaded" ? (
             <>
               <div
                 className="grid-cols-2  grid md:grid-cols-[repeat(auto-fill,_215px)] gap-4 pb-1"
                 ref={itemsRef}
               >
-                {items[catalog].map((obj, index) => (
+                {product.map((obj, index) => (
                   <Card {...obj} key={index} />
                 ))}
               </div>
             </>
+          ) : (
+            <div
+              className="   grid-cols-2  grid md:grid-cols-[repeat(auto-fill,_215px)] gap-4 pb-1 "
+              ref={itemsRef}
+            ></div>
           )}
 
           {/* это для перелистывания (пагинация) */}
