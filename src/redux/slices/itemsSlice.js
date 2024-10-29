@@ -16,39 +16,13 @@ export const fetchRemoveProduct = createAsyncThunk(
     await axios.delete(`/product/${type}/${id}`);
   }
 );
-// export const fetchitems = createAsyncThunk(
-//   "users/fetchitemsStatus",
-//   async (params, thunkAPI) => {
-//     const {
-//       sortProperty,
-//       sortDesc,
-//       searchValue,
-//       category,
-//       itemsPerPage,
-//       itemOffset,
-//     } = params;
-//     const page = itemOffset / itemsPerPage + 1;
-//     const delay = (ms) => {
-//       return new Promise((resolve) => {
-//         setTimeout(() => resolve(), ms);
-//       });
-//     };
-//     await delay(600);
-//     const { data } = await axios.get(
-//       `http://localhost:3020/pizza?_sort=${sortProperty.property}${
-//         sortDesc ? "&_order=desc" : ""
-//       }${searchValue ? "&q=" + searchValue : ""}${
-//         category > 0 ? "&category=" + category : ""
-//       }${"&_page=" + page + "&_limit=" + itemsPerPage}`
-//     );
-//     return data;
-//   }
-// );
 
 const initialState = {
   product: [],
   items: itemsJSON,
   status: "loading",
+  isEditor: false,
+  currentProduct: {},
 };
 
 export const itemsSlice = createSlice({
@@ -57,6 +31,15 @@ export const itemsSlice = createSlice({
   reducers: {
     setItems: (state, action) => {
       state.items = action.payload;
+    },
+    setIsEditor: (state) => {
+      state.isEditor = true;
+    },
+    setCurrentProduct: (state, action) => {
+      state.currentProduct = action.payload;
+    },
+    setProductProperty: (state, action) => {
+      state.currentProduct[action.payload.property] = action.payload.text;
     },
   },
 
@@ -73,7 +56,7 @@ export const itemsSlice = createSlice({
       state.status = "error";
       state.product = [];
     });
-    //удаление статьи
+    //удаление продукта
     builder.addCase(fetchRemoveProduct.pending, (state, action) => {
       console.log(action.meta.arg);
       state.product = state.product.filter(
@@ -83,7 +66,7 @@ export const itemsSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
-export const { setItems } = itemsSlice.actions;
+export const { setItems, setIsEditor, setCurrentProduct, setProductProperty } =
+  itemsSlice.actions;
 
 export default itemsSlice.reducer;
