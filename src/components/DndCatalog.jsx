@@ -66,6 +66,7 @@ const Accordion = () => {
     { text: "VonEiken (Chapman, Pepe,Harvest)", value: "VonEiken" },
     { text: "Grand Tobacco (Vip,Triumph,Ararat)", value: "gt" },
     { text: "Cigaronne", value: "cigaronne" },
+    { text: "Peppel", value: "peppell" },
   ];
   const catalogArray = [
     { text: "Сигареты, сигариллы", value: "cigarettes" },

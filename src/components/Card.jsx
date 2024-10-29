@@ -11,6 +11,7 @@ function Card({
   description,
   country,
   brand,
+  type,
 }) {
   const { isEditor } = useSelector((state) => state.items);
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ function Card({
           description,
           country,
           brand,
+          type,
         })
       );
     }
@@ -47,7 +49,7 @@ function Card({
         <h5 className="sm:mb-2 text-sm sm:text-xl break-words font-medium leading-tight text-neutral-800 dark:text-neutral-50 ">
           {name}
         </h5>
-        {resin & (resin !== 0) ? (
+        {resin ? (
           <p className="mb-4 text-[10px] md:text-xs text-neutral-600 dark:text-neutral-200">
             Смола — {resin} мг/сиг; Никотин — {nicotine} мг/сиг;
           </p>

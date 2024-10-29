@@ -1,8 +1,9 @@
 import React from "react";
 import axios, { baseURL } from "./axios";
-import { Navigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 const AuthPanel = () => {
-  const [login, setLogin] = React.useState("");
+  const navigate = useNavigate();
+  const [login, setLogin] = React.useState("admin");
   const [password, setPassword] = React.useState(
     "vw_VFJzCLW9Bc6C58LFIuKUB5HglGaPVLW3E93OPqxiy5MsVaxSJQNBAcgmAG5WJ93t0buL2mx0N6ifu0h7Bd3K6x"
   );
@@ -24,6 +25,7 @@ const AuthPanel = () => {
       if ("token" in data) {
         window.localStorage.setItem("token", data.token);
       }
+      navigate("/admin-panel");
     } catch (error) {
       alert("ошибка авторизации");
       console.log(error);
