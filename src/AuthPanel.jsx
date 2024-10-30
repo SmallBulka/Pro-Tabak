@@ -3,10 +3,8 @@ import axios, { baseURL } from "./axios";
 import { Navigate, useNavigate } from "react-router-dom";
 const AuthPanel = () => {
   const navigate = useNavigate();
-  const [login, setLogin] = React.useState("admin");
-  const [password, setPassword] = React.useState(
-    "vw_VFJzCLW9Bc6C58LFIuKUB5HglGaPVLW3E93OPqxiy5MsVaxSJQNBAcgmAG5WJ93t0buL2mx0N6ifu0h7Bd3K6x"
-  );
+  const [login, setLogin] = React.useState("");
+  const [password, setPassword] = React.useState("");
   //   const loginRef = React.useRef();
   //   const passwordRef = React.useRef("");
   //   React.useEffect(() => {
