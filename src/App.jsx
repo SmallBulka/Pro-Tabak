@@ -51,7 +51,7 @@ function App() {
           />
           <LogoTicker />
 
-          <div ref={logoTicker} className="container m-auto lg:px-5 py-2   ">
+          <div className="container m-auto lg:px-5 py-2">
             <hr className="br m-auto "></hr>
             <h2 className="h2 p-5  flex justify-center">Каталог</h2>
 
@@ -114,6 +114,7 @@ function App() {
               </div>
             </div>
           </div>
+          <div ref={logoTicker} className="h-0 w-0"></div>
           <Accordion />
 
           <div
@@ -123,7 +124,7 @@ function App() {
             <div className="container mx-auto">
               <hr className="br m-auto"></hr>
               <h2 className="h2 p-10  flex justify-center text-center">
-                Преимущества компании
+                {"Преимущества компании"}
               </h2>
 
               <div className="grid grid-cols-1 gap-12 xl:grid-cols-3 text-[#fffa] p-5 pb-20">
@@ -133,8 +134,9 @@ function App() {
                   </div>
                   <h3 className="h3 mb-5 ">Широкий ассортимент</h3>
                   <p className="mb-5 max-w-md mx-auto">
-                    Мы предлагаем разнообразие товаров, чтобы удовлетворить
-                    разные потребности клиентов.{" "}
+                    {
+                      "Мы предлагаем разнообразие товаров, чтобы удовлетворитьразные потребности клиентов."
+                    }
                   </p>
                 </div>
                 <div className="steps__step text-center ">
@@ -143,8 +145,9 @@ function App() {
                   </div>
                   <h3 className="h3 mb-5">Официальные дистрибьюторы</h3>
                   <p className="mb-5 max-w-md mx-auto">
-                    Мы сотрудничаем только с надежными поставщиками, гарантируя
-                    качество продукции.{" "}
+                    {
+                      "Мы сотрудничаем только с надежными поставщиками, гарантируя качество продукции."
+                    }
                   </p>
                 </div>
                 <div className="steps__step text-center ">
@@ -153,8 +156,9 @@ function App() {
                   </div>
                   <h3 className="h3 mb-5">Гарантия качества</h3>
                   <p className="mb-5 max-w-md mx-auto">
-                    Мы работаем в удобное для вас время, гарантируя доступность
-                    нашей продукции.{" "}
+                    {
+                      "Мы работаем в удобное для вас время, гарантируя доступность нашей продукции."
+                    }
                   </p>
                 </div>
               </div>

@@ -19,10 +19,10 @@ function Footer() {
             </p> */}
             <ul className="text-pretty flex gap-[54px] justify-center xl:justify-start">
               <li className="flex gap-3 items-center">
-                <a href="tel:+79044903470">
+                <a href="tel:+79255269772">
                   <Whatsapp />
                 </a>
-                <a href="tel:+79044903470" className="text-[#fffa]">
+                <a href="tel:+79255269772" className="text-[#fffa]">
                   +7 (904) 490 34 70
                 </a>
               </li>
@@ -36,13 +36,13 @@ function Footer() {
                 href="https://yandex.ru/maps/-/CDs0yJ~T"
                 className=" text-[#ffce00]"
               >
-                ​Ул. Федюнинского, 55
+                {"​Ул. Федюнинского, 55"}
               </a>
               <a
                 href="https://yandex.ru/maps/-/CDs0yZPM"
                 className=" text-[#ffce00]"
               >
-                ​Ул. Герцена, 95
+                {"​Ул. Герцена, 95"}
               </a>
             </div>
           </div>

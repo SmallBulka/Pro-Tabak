@@ -59,15 +59,19 @@ function Form() {
         </div>
         <hr className="mt-3"></hr>
         <div className="flex justify-around pt-7 text-white h3 flex-wrap ">
-          <a href="tel:+71112223344">
+          <a href="tel:+79255269772">
             <div className=" flex flex-wrap items-center flex-col p-4 m-2 border-[1px] border-[#494949] rounded-xl ">
-              <p className="select-none text-center">Тел. рынок "Центральный"</p>
+              <p className="select-none text-center">
+                {'Тел. рынок "Центральный"'}
+              </p>
               <p>+7 (999) 123 45 67</p>
             </div>
           </a>
-          <a href="tel:+71112223344">
+          <a href="tel:+79991234567">
             <div className=" flex flex-wrap items-center flex-col p-4 m-2 border-[1px] border-[#494949] rounded-xl ">
-              <p className="select-none text-center">Тел. рынок "Михайловский"</p>
+              <p className="select-none text-center">
+                {'Тел. рынок "Михайловский"'}
+              </p>
               <p>+7 (999) 123 45 67</p>
             </div>
           </a>

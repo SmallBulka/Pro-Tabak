@@ -27,7 +27,7 @@ const AdminPanel = () => {
   const { currentProduct } = useSelector((state) => state.items);
   const [isEditing, setIsEditing] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(false);
-  console.log(currentProduct);
+  //   console.log(currentProduct);
 
   React.useEffect(() => {
     if (currentProduct?._id) {

@@ -2,6 +2,13 @@ import ArrowIcon from "../assets/ArrowIcon";
 
 // eslint-disable-next-line react/prop-types
 function Hero({ scrollToCatalog, scrollToMiniMap }) {
+  const slogans = [
+    "Качество, которому можно доверять",
+    "Изысканность и качество в каждой затяжке",
+    "Мы заботимся о каждом клиенте и предлагаем только лучшее",
+    "Наилучший выбор сигарет в Тюмени",
+  ];
+  const randomNumber = Math.floor(Math.random() * slogans.length);
   return (
     // pt-8 pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)]
     <section className=" hero  h-[740px] xl:h-[760px] bg-auto bg-ovo lg:bg-hero  lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20">
@@ -11,7 +18,7 @@ function Hero({ scrollToCatalog, scrollToMiniMap }) {
                 xl:text-left lg:items-start"
         >
           <h1 className="text-[40px] md:text-[64px]  leading-none mb-8 select-none">
-            Изысканность и качество в каждой затяжке
+            {slogans[randomNumber]}
           </h1>
           {/* <p className="mb-8">придумай сюда текст</p> */}
           <div className="md:flex gap-1 items-centermt ">
