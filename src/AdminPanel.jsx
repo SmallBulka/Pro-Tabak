@@ -2,11 +2,22 @@ import React from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import Accordion from "./components/DndCatalog";
 import { useDispatch, useSelector } from "react-redux";
-import { setIsEditor, setProductProperty } from "./redux/slices/itemsSlice";
+import {
+  setCurrentProduct,
+  setIsEditor,
+  setProductProperty,
+} from "./redux/slices/itemsSlice";
 import axios from "./axios";
 // import { green, orange } from "@mui/material/colors";
 // import Button from "@mui/material/Button";
-import { Button, Tab, Tabs, TextField } from "@mui/material";
+import {
+  Backdrop,
+  Button,
+  CircularProgress,
+  Tab,
+  Tabs,
+  TextField,
+} from "@mui/material";
 import { baseURL } from "./axios";
 
 const AdminPanel = () => {
@@ -14,15 +25,95 @@ const AdminPanel = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { currentProduct } = useSelector((state) => state.items);
+  const [isEditing, setIsEditing] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false);
   console.log(currentProduct);
+
+  React.useEffect(() => {
+    if (currentProduct?._id) {
+      setIsEditing(true);
+    } else setIsEditing(false);
+  }, [currentProduct?._id]);
+
   React.useEffect(() => {
     dispatch(setIsEditor());
     dispatch(setProductProperty({ property: "type", text: "cigarettes" }));
   }, []);
+  React.useEffect(() => {
+    if (currentProduct?.type !== "cigarettes") {
+      dispatch(setProductProperty({ property: "nicotine", text: undefined }));
+      dispatch(setProductProperty({ property: "resin", text: undefined }));
+    }
+  }, [currentProduct.type]);
+  //отправка товара на бэкэнд
+  const onSubmit = async () => {
+    try {
+      setIsLoading(true);
+      //   await new Promise((resolve) => {
+      //     setTimeout(() => resolve(), 3000);
+      //   });
+      if (!currentProduct.name) {
+        alert("введите название");
+        return;
+      }
+      if (!currentProduct.type) {
+        alert("введите тип продукта");
+        return;
+      }
+      const fields = {
+        name: currentProduct.name,
+        description: currentProduct?.description
+          ? currentProduct?.description
+          : "",
+        nicotine: currentProduct?.nicotine
+          ? Number(currentProduct.nicotine)
+          : "",
+        resin: currentProduct?.resin ? Number(currentProduct.resin) : "",
+        country: currentProduct?.country ? currentProduct.country : "",
+        brand: currentProduct?.brand ? currentProduct.brand : "",
+        imageUrl: currentProduct?.imageUrl ? currentProduct.imageUrl : "",
+      };
+      console.log(fields);
+      if (isEditing) {
+        await axios.patch(
+          "/product/" + currentProduct.type + "/" + currentProduct._id,
+          fields
+        );
+      } else {
+        await axios.post("/product/" + currentProduct.type, fields);
+      }
+      dispatch(setCurrentProduct({ type: "cigarettes" }));
+    } catch (error) {
+      console.warn(error);
+      alert("Ошибка при создании товара");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+  //удаление товара
+  const onDelete = async () => {
+    try {
+      setIsLoading(true);
+      if (isEditing) {
+        await axios.delete(
+          "/product/" + currentProduct.type + "/" + currentProduct._id
+        );
+        dispatch(setCurrentProduct({ type: "cigarettes" }));
+      } else {
+        alert("Выберете товар для удаления!");
+      }
+    } catch (error) {
+      console.warn(error);
+      alert("Ошибка при создании статьи");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+  //удаление фото
   const onClickRemoveImage = async () => {
     try {
+      setIsLoading(true);
       await axios.delete("/upload" + currentProduct.imageUrl.slice(8));
-
       dispatch(
         setProductProperty({
           property: "imageUrl",
@@ -32,10 +123,14 @@ const AdminPanel = () => {
     } catch (error) {
       console.warn(error);
       alert("Не удалось удалить изображение");
+    } finally {
+      setIsLoading(false);
     }
   };
-  const handleChangeFile = async (event) => {
+  //добвыление фото и загрузка на бэкэнд, бэкэнд возвращает ссылку на фото и мы ее вшиваем в товар
+  const uploadImage = async (event) => {
     try {
+      setIsLoading(true);
       const formData = new FormData();
       formData.append("image", event.target.files[0]);
       const { data } = await axios.post("/upload", formData);
@@ -50,6 +145,8 @@ const AdminPanel = () => {
     } catch (error) {
       console.error(error);
       alert("Не удалось загрузить изображение");
+    } finally {
+      setIsLoading(false);
     }
   };
   if (!window.localStorage.getItem("token")) {
@@ -58,21 +155,76 @@ const AdminPanel = () => {
   return (
     <div className="flex flex-col justify-around  bg-slate-400   p-4 ">
       <div className="min-h-[600px] h-fit flex flex-col justify-around  bg-[#191d21] rounded-[20px] mb-4 p-6">
-        <Button
-          color="error"
-          sx={{ width: "200px" }}
-          variant="outlined"
-          size="large"
-          className="bg-white "
-          onClick={() => {
-            if (confirm("Вы действительно хотите выйти?")) {
-              window.localStorage.removeItem("token");
-              navigate("/auth");
-            }
-          }}
+        <Backdrop
+          sx={(theme) => ({ color: "#fff", zIndex: theme.zIndex.drawer + 1 })}
+          open={isLoading}
         >
-          Выйти
-        </Button>
+          <CircularProgress color="inherit" />
+        </Backdrop>
+        <div className="text-white flex justify-around border-[1px] border-solid rounded w-[400px] px-3 py-1 self-center text-2xl">
+          {isEditing ? "Редактирование товара" : "Создание товара"}
+        </div>
+        <div className="flex justify-around  flex-wrap">
+          <Button
+            color="error"
+            sx={{ width: "200px", margin: "10px" }}
+            variant="contained"
+            className="bg-white "
+            onClick={() => {
+              if (confirm("Вы действительно хотите выйти?")) {
+                window.localStorage.removeItem("token");
+                navigate("/auth");
+              }
+            }}
+          >
+            Выйти
+          </Button>
+          {isEditing && (
+            <Button
+              color="error"
+              sx={{ width: "200px", margin: "10px" }}
+              variant="contained"
+              className="bg-white "
+              onClick={() => {
+                if (window.confirm("Удалить товар?")) {
+                  onClickRemoveImage();
+                  onDelete();
+                }
+              }}
+            >
+              удалить товар
+            </Button>
+          )}
+          <Button
+            sx={{ width: "fit-content", margin: "10px" }}
+            variant="contained"
+            className="bg-white "
+            onClick={() => {
+              if (confirm("Создать новый товар?")) {
+                dispatch(setCurrentProduct({ type: "cigarettes" }));
+              }
+            }}
+          >
+            Создать новый товар
+          </Button>
+          <Button
+            sx={{ width: "200px", margin: "10px" }}
+            onClick={() => inputFileRef.current.click()}
+            variant="contained"
+            size="large"
+          >
+            Загрузить фото
+          </Button>
+
+          <Button
+            onClick={onSubmit}
+            variant="contained"
+            sx={{ width: "200px", margin: "10px" }}
+            color="success"
+          >
+            Сохранить товар
+          </Button>
+        </div>
         {currentProduct.type && (
           <Tabs
             variant="scrollable"
@@ -141,48 +293,50 @@ const AdminPanel = () => {
 
         {currentProduct.type === "cigarettes" && (
           <>
-            <TextField
-              sx={{
-                color: "white",
-                padding: "5px",
-                label: { color: "#1976d2" },
-                input: { color: "white" },
-              }}
-              variant="standard"
-              label="Количество смолы"
-              className="  border-solid border-[2px] border-black rounded-md "
-              value={currentProduct.resin ? currentProduct.resin : ""}
-              onChange={(event) =>
-                dispatch(
-                  setProductProperty({
-                    property: "resin",
-                    text: event.target.value,
-                  })
-                )
-              }
-              type="number"
-            />
-            <TextField
-              sx={{
-                color: "white",
-                padding: "5px",
-                label: { color: "#1976d2" },
-                input: { color: "white" },
-              }}
-              variant="standard"
-              label="Количество никотина"
-              className="  border-solid border-[2px] border-black rounded-md "
-              value={currentProduct.nicotine ? currentProduct.nicotine : ""}
-              onChange={(event) =>
-                dispatch(
-                  setProductProperty({
-                    property: "nicotine",
-                    text: event.target.value,
-                  })
-                )
-              }
-              type="number"
-            />
+            <div className="flex justify-around  flex-wrap">
+              <TextField
+                sx={{
+                  color: "white",
+                  padding: "5px",
+                  label: { color: "#1976d2" },
+                  input: { color: "white" },
+                }}
+                variant="standard"
+                label="Количество смолы"
+                className="  border-solid border-[2px] border-black rounded-md "
+                value={currentProduct.resin ? currentProduct.resin : ""}
+                onChange={(event) =>
+                  dispatch(
+                    setProductProperty({
+                      property: "resin",
+                      text: event.target.value,
+                    })
+                  )
+                }
+                type="number"
+              />
+              <TextField
+                sx={{
+                  color: "white",
+                  padding: "5px",
+                  label: { color: "#1976d2" },
+                  input: { color: "white" },
+                }}
+                variant="standard"
+                label="Количество никотина"
+                className="  border-solid border-[2px] border-black rounded-md "
+                value={currentProduct.nicotine ? currentProduct.nicotine : ""}
+                onChange={(event) =>
+                  dispatch(
+                    setProductProperty({
+                      property: "nicotine",
+                      text: event.target.value,
+                    })
+                  )
+                }
+                type="number"
+              />
+            </div>
             <Tabs
               variant="scrollable"
               scrollButtons
@@ -235,37 +389,27 @@ const AdminPanel = () => {
             </Tabs>
           </>
         )}
-        <Button
-          onClick={() => inputFileRef.current.click()}
-          variant="outlined"
-          size="large"
-        >
-          Загрузить превью
-        </Button>
-        <input
-          ref={inputFileRef}
-          type="file"
-          onChange={handleChangeFile}
-          hidden
-        />
         {currentProduct.imageUrl && (
-          <>
+          <div className="flex flex-wrap justify-around items-center m-3 p-3">
             <Button
+              sx={{ width: "200px", margin: "10px" }}
               variant="contained"
               color="error"
               onClick={onClickRemoveImage}
             >
-              Удалить
+              Удалить фото
             </Button>
             <img
-              className=""
+              className="h-fit w-fit"
               src={baseURL + currentProduct.imageUrl}
               alt="Uploaded"
             />
-          </>
+          </div>
         )}
-        {/* type
-         */}
+        {/* <div className="flex flex-wrap justify-around items-center m-3 p-3">
+          
+        </div> */}
+        <input ref={inputFileRef} type="file" onChange={uploadImage} hidden />
       </div>
       <Accordion isEditor />
     </div>
