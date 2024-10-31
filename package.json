@@ -1,5 +1,7 @@
 {
-  "homepage": "https://smallbulka.github.io/Pro-Tabak/",
+  "proxy": {
+    "url": "http://localhost:3000"
+  },
   "name": "tabacco-store",
   "private": true,
   "version": "0.0.0",
