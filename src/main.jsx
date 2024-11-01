@@ -9,7 +9,6 @@ import AdminPanel from "./AdminPanel.jsx";
 import AuthPanel from "./AuthPanel.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <h1>hello</h1>
     <BrowserRouter>
       <Provider store={store}>
         <Routes>
