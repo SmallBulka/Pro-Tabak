@@ -1,7 +1,5 @@
 {
-  "proxy": {
-    "url": "http://localhost:8000"
-  },
+  "homepage": ".",
   "name": "tabacco-store",
   "private": true,
   "version": "0.0.0",
