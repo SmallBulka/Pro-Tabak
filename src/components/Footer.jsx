@@ -13,6 +13,7 @@ function Footer() {
               <div className=" text-4xl  text-slate-100 font-rubik ">
                 Pro_Табак
               </div>
+              <title>Pro_Табак</title>
             </a>
             {/* <p className="mb-8 text-xl text-[#fffa]">
               Дима придумай сюда текст

@@ -8,6 +8,7 @@ function Hero({ scrollToCatalog, scrollToMiniMap }) {
     "Мы заботимся о каждом клиенте и предлагаем только лучшее",
     "Наилучший выбор сигарет в Тюмени",
   ];
+  <title>сигареты в Тюмени</title>
   const randomNumber = Math.floor(Math.random() * slogans.length);
   return (
     // pt-8 pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)]

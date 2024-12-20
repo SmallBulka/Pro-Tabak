@@ -9,6 +9,7 @@ import Сhesterfield from "../assets/Сhesterfield";
 import { motion } from "framer-motion";
 
 function LogoTicker() {
+<title>pro табак</title>
   return (
     <div className=" md:pt-12">
       <div className="coitainer">

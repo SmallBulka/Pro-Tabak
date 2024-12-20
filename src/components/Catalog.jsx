@@ -1,6 +1,7 @@
 // import ArrowIcon from "../assets/ArrowIcon"
 
 function Catalog(props) {
+  <title>папиросы кальяны стики самокрутки</title>
   return (
     <section>
       <div

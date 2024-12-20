@@ -24,7 +24,7 @@ function Header({ scrollToCatalog, scrollContacts, scrollToDescription }) {
             <p>vdrfv</p>
           </div>
         </div> */}
-
+      <title>про табак</title>
       <div className="container mx-auto flex justify-between h-full items-center ">
         <div className=" text-4xl  text-slate-100 font-rubik ">Pro_Табак</div>
 
